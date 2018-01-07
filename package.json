@@ -5,7 +5,8 @@
     "dev": "node index dev",
     "build": "node index export",
     "start": "next start",
-    "deploy": "gh-pages -d build --dotfiles"
+    "deploy:prep": "cp .nojekyll out/.nojekyll && cp CNAME out/CNAME",
+    "deploy": "yarn deploy:prep && gh-pages -d out --dotfiles"
   },
   "browser": {
     "fs-jetpack": false

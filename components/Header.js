@@ -1,7 +1,12 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default ({ pathname }) => (
   <header>
+    <Head>
+      <link rel="shortcut icon" href="/static/favicon.ico"/>
+      <meta name="viewport" content="width=device-width"/>
+    </Head>
     <Link prefetch href='/'>
       <a className={pathname === '/' && 'is-active'}>Home</a>
     </Link>
