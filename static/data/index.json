@@ -12,6 +12,7 @@
       "id": "$ROOT_QUERY.user({\"username\":\"hobochild\"})",
       "generated": true
     },
+    "content({\"slug\":\"/welcome\"})": "\u003cp>hi 👋,\u003c/p>\n\u003cp>I'm craig (@hobochild), I like javascript and 🏄. I'm currently living in (east) london, you can reach me \u003ca href=\"mailto:hobochildster@gmail.com\">here\u003c/a>.\u003c/p>\n",
     "posts({\"username\":\"hobochild\"})": [
       {
         "type": "id",
@@ -24,7 +25,6 @@
         "generated": false
       }
     ],
-    "content({\"slug\":\"/welcome\"})": "\u003cp>hi 👋,\u003c/p>\n\u003cp>I'm craig (@hobochild), I like javascript and 🏄. I'm currently living in (east) london, you can reach me \u003ca href=\"mailto:hobochildster@gmail.com\">here\u003c/a>.\u003c/p>\n",
     "repos({\"username\":\"hobochild\"})": [
       {
         "type": "id",
