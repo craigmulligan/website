@@ -5,7 +5,7 @@ import Repos from '../components/Repos'
 import Me from '../components/Me'
 import Divider from '../components/Divider'
 
-import withData from 'nextatic/withData'
+import withData from 'next-static-tools/withData'
 
 export default withData((props) => (
   <App>

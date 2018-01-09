@@ -5,14 +5,14 @@ const { resolve, join } = require('path')
 const resolvers = require('./lib/resolvers')
 const typeDefs = require('./lib/typeDefs')
 const yargs = require('yargs')
-const nextatic = require('nextatic').default
+const serve = require('next-static-tools').default
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 
 yargs
   .version()
   .command('dev', 'run dev server', () => {
-    app.prepare().then(() => nextatic({ typeDefs, resolvers, app })) 
+    app.prepare().then(() => serve({ typeDefs, resolvers, app })) 
   })
   .command('export', 'export static site', (args) => {
     const options = {
@@ -20,7 +20,7 @@ yargs
       outdir: args.outdir ? resolve(args.outdir) : resolve(process.cwd(), 'out')
     }
 
-    nextatic({ typeDefs, resolvers, app })
+    serve({ typeDefs, resolvers, app })
 
     nextBuild(process.cwd())
       .then(() =>{
