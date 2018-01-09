@@ -1,7 +1,7 @@
 import App from '../components/App'
 import Header from '../components/Header'
 import Content from '../components/Content'
-import withData from '../lib/withData'
+import withData from 'nextatic/withData'
 import Projects from '../components/Projects'
 
 export default withData((props) => (

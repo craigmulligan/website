@@ -5,5 +5,14 @@ module.exports = {
       '/': { page: '/' },
       '/about': { page: '/about' },
     }
+  }, 
+  webpack: (config) => {
+    config.node = {
+      console: false,
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty'
+    }
+    return config
   }
 }
