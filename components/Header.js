@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next-static-tools/link'
 import Head from 'next/head'
 
 export default ({ pathname }) => (
@@ -7,11 +7,11 @@ export default ({ pathname }) => (
       <link rel="shortcut icon" href="/static/favicon.ico"/>
       <meta name="viewport" content="width=device-width"/>
     </Head>
-    <Link prefetch href='/'>
+    <Link prefetch withData href='/'>
       <a className={pathname === '/' && 'is-active'}>Home</a>
     </Link>
 
-    <Link prefetch href='/about'>
+    <Link prefetch withData href='/about'>
       <a className={pathname === '/about' && 'is-active'}>About</a>
     </Link>
 
