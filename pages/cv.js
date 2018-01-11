@@ -1,18 +1,12 @@
 import App from '../components/App'
 import Header from '../components/Header'
-import Posts from '../components/Posts'
-import Repos from '../components/Repos'
-import Me from '../components/Me'
-
+import Content from '../components/Content'
 import withData from 'next-static-tools/withData'
+import Projects from '../components/Projects'
 
 export default withData((props) => (
   <App>
     <Header pathname={props.url.pathname} />
-    <Me />
-    <hr />
-    <Posts />
-    <hr />
-    <Repos />
+    <Content slug={props.url.pathname} />
   </App>
 ))

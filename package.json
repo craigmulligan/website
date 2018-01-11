@@ -5,6 +5,7 @@
     "dev": "node index dev",
     "build": "node index export",
     "start": "next start",
+    "serve": "serve ./out -p 4000",
     "deploy:prep": "cp .nojekyll out/.nojekyll && cp CNAME out/CNAME",
     "deploy": "yarn deploy:prep && gh-pages -d out --dotfiles"
   },
@@ -28,6 +29,7 @@
   "author": "hobochild",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^1.1.0",
+    "serve": "^6.4.4"
   }
 }
