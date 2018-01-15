@@ -17,7 +17,7 @@ const Posts = ({ data: { error, posts, loading }}) => {
             <p>
               <span>{getDate(p.firstPublishedAt)}</span> 
               &nbsp;-&nbsp; 
-              <a href={p.url} target='_blank'>{p.title}</a>
+              <a href={p.url} rel='noopener' target='_blank'>{p.title}</a>
             </p>
           </div>
         )
