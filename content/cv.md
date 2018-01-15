@@ -6,13 +6,13 @@
 
 #### [breadcrumb.io && flippa](https://breadcrumb.io/) (contract) - dec 2017 - present 
 
-> Flippa is a social commerce app for informal traders in South Africa. 
+> Flippa is a social commerce mobile app for informal traders in South Africa. 
 
 position: full-stack developer 
 
 responsiblities: 
- - build react-native app for android - using Expo, apollo
- - build API - using a javascript implementation of graphql backed by PostgreSQL
+ - Build react-native app for android - using Expo and apollo-client
+ - Build API - using a javascript implementation of graphql backed by PostgreSQL
 
 #### [resin.io](https://resin.io) (full-time) - nov 2014 - nov 2017
 
@@ -27,20 +27,22 @@ responsibilities:
 * Build Proof of concepts for enterprise clients looking to sell resin within their companies. 
 * Build out tooling to auto-generate websites for open source projects - [landr](https://github.com/resin-io/landr)
 * Build example projects and tutorials for the resin blog.
-* Film & edit resin [case studies](https://vimeo.com/), here is one example [NVBots example](https://vimeo.com/141222811)
+* Film & edit resin case-study videos, [example](https://vimeo.com/141222811)
 
-#### [firingsquad](http://firingsquad.co.za/) - nov 2013 - 2014
+#### [Firing Squad](http://firingsquad.co.za/) - nov 2013 - 2014
  
 position: frontend developer
 
-> Firing squad was a digital agency building WordPress sites for some of south aAfrica'slargest companies including dimension data, Condé Nast 
+> Firing Squad was a digital agency building WordPress sites for some of South Africa'slargest companies including dimension data, Condé Nast 
 and PWC.
 
+responsibilities: 
+* Convert PSDs to custom wordpress themes 
 <hr />
 
 ### Education
 
 #### University of Cape Town - 2009 - 2013
 
-* Honours film and Media
+* Honours Film and Media
 

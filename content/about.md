@@ -1,9 +1,11 @@
 ## About this site 
 
-Apollo is a GraphQL client that allows you to easily query the exact data you need from a GraphQL server. In addition to fetching and mutating data, Apollo analyzes your queries and their results to construct a client-side cache of your data, which is kept up to date as further queries and mutations are run, fetching more results from the server.
+This site is built with [`next-static-tools`](https://github.com/hobochild/next-static-tools). It's a collection of incremenatlly adoptable tools to make building static sites with graphql and next.js easy.
 
-In this simple example, we integrate Apollo seamlessly with Next by wrapping our pages inside a higher-order component (HOC). Using the HOC pattern we're able to pass down a central store of query result data created by Apollo into our React component hierarchy defined inside each page of our Next application.
+`next-static-tools` is heavily inspired by gatsby.js but aims to be simpler and more transparent. Instead of abstracting the grapqhl schema from you like gatsby does it next-static-tools requires you to pass a shema and resolvers.
 
-On initial page load, while on the server and inside getInitialProps, we invoke the Apollo method, getDataFromTree. This method returns a promise; at the point in which the promise resolves, our Apollo Client store is completely initialized.
+It then launches a server for you and allows you to use all the features of the appollo client in any of your pages. Of course we don't want to run a production grapqhl server, for a basic static site. So `next-static-tools` instead runs it only in dev mode and then when building the site we write out the queries and the resulting data to json file. The client then loads these json files into the client cache, so you get instant page transitions.  
 
-Ofcoarse we don't want to run a production grapqhl server, for a basic static site. So we instead run it only in dev mode and when building the site we write out the queries and the resulting data to json file. The client then loads these json files and renders the data. 
+`next-static-tools` is still a work in progess and should have offline support and a cli shortly, if you have feed back please create an [issue](https://github.com/hobochild/next-static-tools/issues)
+
+
