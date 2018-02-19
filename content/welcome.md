@@ -1,5 +1,5 @@
 hi 👋,
 
-I'm craig (@hobochild), I like javascript and 🏄. I'm currently living in (east) london, you can reach me [here](mailto:hobochildster@gmail.com).
+I'm craig ([@hobochild](https://github.com/hobochild)), I like javascript and 🏄. I'm currently living in London and working [@blaze](https://blaze.cc) to improve urban mobility, you can reach me [here](mailto:hobochildster@gmail.com) ✌️.
 
 

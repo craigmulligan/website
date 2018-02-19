@@ -18,7 +18,7 @@
     "graphql-tag": "^2.5.0",
     "medium-posts": "^1.0.0",
     "next": "^4.2.2",
-    "next-static-tools": "^1.3.0",
+    "next-static-tools": "^1.5.2",
     "react": "^16.2.0",
     "react-apollo": "^2.0.0",
     "react-dom": "^16.2.0",

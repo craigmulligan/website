@@ -1,19 +1,34 @@
-const resolvers = require('./lib/resolvers')
-const typeDefs = require('./lib/typeDefs')
+
+
 const yargs = require('yargs')
-const serve = require('next-static-tools').default
+const next = require('next')
+const { build, createServer } = require('next-static-tools')
 
 yargs
   .version()
-  .command('dev', 'run dev server', () => {}, async () => {
-    const server = serve({ typeDefs, resolvers })
-    server.start().then(({ port }) => console.log(`server on http://localhost:${port}`))
-  })
-  .command('export', 'export static site', () => {}, async (args) => {
-    const server = serve({ typeDefs, resolvers })
-    await server.start()
-    await server.export()
-    process.exit(0)
-  })
-  .argv
+  .command('dev', 'run dev server', () => {
+    const dev = process.env.node_env !== 'production'
+    const app = next({ dev })
 
+    const server = createServer(app)
+    // add yo custom middleware
+    server.get('/post/:id', (req, res) => {
+      return app.render(req, res, '/post', {
+        id: req.params.id
+      })
+    })
+
+    server
+      .start()
+      .then(port => console.log(`server on http://localhost:${port}`))
+      .catch(console.err)
+  })
+  .command('export', 'export static site', () => {
+    build()
+      .then(() => 'Your static site is ready!')
+      .then(() => process.exit())
+      .catch(err => {
+        console.log(err)
+        process.exit(1)
+      })
+  }).argv

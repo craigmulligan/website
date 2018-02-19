@@ -1,3 +1,5 @@
+const resolvers = require('./lib/resolvers')
+const typeDefs = require('./lib/typeDefs')
 // next.config.js
 module.exports = {
   exportPathMap: function() {
@@ -6,5 +8,7 @@ module.exports = {
       '/about': { page: '/about' },
       '/cv': { page: '/cv' }
     }
-  } 
+  },
+  typeDefs,
+  resolvers
 }
