@@ -6,7 +6,8 @@
     "build": "node index export",
     "start": "next start",
     "serve": "serve ./out -p 4000",
-    "deploy:prep": "cp .nojekyll out/.nojekyll && cp CNAME out/CNAME",
+    "deploy:prep":
+      "cp keybase.txt out/keybase.txt && cp .nojekyll out/.nojekyll && cp CNAME out/CNAME",
     "deploy": "yarn deploy:prep && gh-pages -d out --dotfiles"
   },
   "dependencies": {
