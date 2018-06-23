@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/hobochild
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hobochild.tk
+  * I am hobochild (https://keybase.io/hobochild) on keybase.
+  * I have a public key with fingerprint 44D4 1828 5D08 4960 094D  5731 C760 17DB B450 A7C2
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017eff6d52560f80b25064dc8a0deafc7914b1bf76bdc56b3030eee933eb1f29cf0a",
+      "fingerprint": "44d418285d084960094d5731c76017dbb450a7c2",
+      "host": "keybase.io",
+      "key_id": "c76017dbb450a7c2",
+      "kid": "01017eff6d52560f80b25064dc8a0deafc7914b1bf76bdc56b3030eee933eb1f29cf0a",
+      "uid": "68cfb9c5e6817a7cd958223fb5353219",
+      "username": "hobochild"
+    },
+    "service": {
+      "hostname": "hobochild.tk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1523567652,
+  "expire_in": 157680000,
+  "prev": "a6c5c56f1d2350d40ac501e9af6d7ddd65d8f9d0e91f22092e30fffa8e3b8b0d",
+  "seqno": 31,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMIgAnicrVJdSBRRGF01NQVTyDTrQZwUtJblzs+dn4UyiswCoyIl1Njmzr2zO7jO
+rDuzmoihFGUUlSFCJUFhhSX94kNSYPaPkZs92ENo9RI9BEqWImTdkXqJHrsvl/vd
+c853vsP3OCPJk55wNPhs5/aT1woTRh6ejXmqR18WtjDIws2Mv4WpI4sXCWNiO4E6
+AzN+BrCAlYiuixhyUAS6DBAHgShgTVYBJqquSQorIBbpkoiwBkXEAx4QQhSeJ4jV
+OUXTgcp4Gd0wgyQaiRqmQ2UFAQuszMkQA1lQRAAUAUOJZzVJpP0wQgIEqqRxlBiy
+bJdBzSHVJj7DojX6CCza+wf+P/uOLcqJsqYjRYNElFmJNsIKlDmO1xHkIc+xigu0
+SdRU6wlFhyxkaSEjjJlWL0PLjYZG3GTdUf6G+Jw6So5ELcfSrLD74zgR2+8yneaI
+C20iKPBbJIAME9MgKaORRG3DMhk/S5GaY7iqLOR4KEoi5LwMORAxoiRguAgoiTKg
+x+1DGqmkKmqQzqyzmBIAFoCqQcASRaV5SRhjEWJZVzAgCk2CAwpHeKDruioTHskI
+YMYdq8G0GD/PUp9qkGraRtBUnViUMK3DQ7VLPAnpnpTkRHfDPOlpWX/2Lqcr9Wco
+6MWRlbXlGwfut2UU31ia3XHfep3mze+Q5iYKps+cbqjatmJd8ZHBmpxv4/urv75N
+eW8y3tbi3O4nQnbjeTD7eYfzkQYxtWFuWphKvLl3Kvwc7LsX73+UUJZ4rKi0r6bI
+LrhMwv7JV3vmBmJXPGPqm5bVobZDhytnyjyRLZvQZHLFyI+M9d+PZ8asD72+rOwe
+8URFdvtCb+2qkclLtzMfjLRJVeeS118sLrj75cLa2XjzvspSX17vWIZ1R5gv76yf
+Ovhia59cktfbEC97Wh/v7ln+ab5/TcT0qbmp1UmnZsYXpM7rTcPtu26vK8nd3FWV
+by8bejd69Ra/u2licPIXJag79Q==
+=CRN/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hobochild
+
+==================================================================
