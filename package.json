@@ -13,6 +13,6 @@
   "devDependencies": {
     "gh-markdown-cli": "^0.2.0",
     "gh-pages": "^1.1.0",
-    "serve": "^6.4.4"
+    "serve": "^7.1.3"
   }
 }
