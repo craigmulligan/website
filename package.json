@@ -1,36 +1,17 @@
 {
-  "name": "hobochild.github.com",
+  "name": "hobochild.tk",
   "version": "1.0.0",
   "scripts": {
-    "dev": "node index dev",
-    "build": "node index export",
-    "start": "next start",
+    "build": "mdown -i'./pages/**/*.md' -o ./out --header ./assets/header.html",
     "serve": "serve ./out -p 4000",
     "deploy:prep":
       "cp keybase.txt out/keybase.txt && cp .nojekyll out/.nojekyll && cp CNAME out/CNAME",
     "deploy": "yarn deploy:prep && gh-pages -d out --dotfiles"
   },
-  "dependencies": {
-    "apollo-error-overlay": "^1.0.0",
-    "bluebird": "^3.5.1",
-    "fs-jetpack": "^1.2.0",
-    "github-repositories": "^3.0.0",
-    "graphql": "^0.12.3",
-    "graphql-tag": "^2.5.0",
-    "medium-posts": "^1.0.0",
-    "next": "^4.2.2",
-    "next-static-tools": "^1.5.2",
-    "react": "^16.2.0",
-    "react-apollo": "^2.0.0",
-    "react-dom": "^16.2.0",
-    "remark": "^8.0.0",
-    "remark-highlight.js": "^5.0.0",
-    "remark-html": "^7.0.0",
-    "yargs": "^10.0.3"
-  },
   "author": "hobochild",
   "license": "ISC",
   "devDependencies": {
+    "gh-markdown-cli": "^0.2.0",
     "gh-pages": "^1.1.0",
     "serve": "^6.4.4"
   }
