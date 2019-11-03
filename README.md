@@ -1,16 +1,16 @@
-## How to use
+### hobochild.tk
 
-Download the example [or clone the repo](https://github.com/zeit/next.js):
+> This site was built with simplicity in mind. It converts `pages/\*.md` files to html and then uses some basic css to improve readability.
+
+# Usage
 
 Install it and run:
 
 ```bash
-yarn 
-yarn dev
+yarn
 ```
 
 ```bash
 yarn build
 yarn deploy
 ```
-

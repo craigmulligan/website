@@ -1,1 +1,1 @@
-![project network fork](https://api.hobochild.workers.dev/tag/xyz.svg)
+![project-network](https://api.hobochild.workers.dev/tag/xyz)
