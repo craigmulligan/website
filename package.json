@@ -4,8 +4,7 @@
   "scripts": {
     "build": "mdown -i'./pages/**/*.md' -o ./out --header ./assets/header.html",
     "serve": "serve ./out -p 4000",
-    "deploy:prep":
-      "cp keybase.txt out/keybase.txt && cp .nojekyll out/.nojekyll && cp CNAME out/CNAME",
+    "deploy:prep": "cp keybase.txt out/keybase.txt && cp .nojekyll out/.nojekyll && cp CNAME out/CNAME",
     "deploy": "yarn deploy:prep && gh-pages -d out --dotfiles"
   },
   "author": "hobochild",
@@ -13,6 +12,6 @@
   "devDependencies": {
     "gh-markdown-cli": "^0.2.0",
     "gh-pages": "^1.1.0",
-    "serve": "^6.4.4"
+    "serve": "^11.2.0"
   }
 }
