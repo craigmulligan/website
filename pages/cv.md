@@ -6,7 +6,7 @@
 
 #### [Beryl](https://beryl.cc) (full-time) - feb 2017 - feb 2019
 
-> A sustainable bike-share company.
+> Beryl is a bike-share company in the UK and US with a focus on sustainability.
 
 position: lead software engineer
 

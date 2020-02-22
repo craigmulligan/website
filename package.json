@@ -2,11 +2,11 @@
   "name": "hobochild.tk",
   "version": "1.0.0",
   "scripts": {
-    "build": "markdown-folder-to-html pages",
+    "build": "yarn build:prep && markdown-folder-to-html pages",
+    "build:clean": "rm -rf _pages && mkdir _pages",
+    "build:prep": "yarn build:clean && cp -r keybase.txt .nojekyll CNAME static _pages",
     "serve": "serve ./_pages -p 4000",
-    "deploy:prep":
-      "cp keybase.txt _pages/keybase.txt && cp .nojekyll _pages/.nojekyll && cp CNAME _pages/CNAME",
-    "deploy": "yarn deploy:prep && gh-pages -d _pages --dotfiles"
+    "deploy": "yarn build && gh-pages -d _pages --dotfiles"
   },
   "author": "hobochild",
   "license": "ISC",
