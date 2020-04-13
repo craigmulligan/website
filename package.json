@@ -2,17 +2,17 @@
   "name": "hobochild.tk",
   "version": "1.0.0",
   "scripts": {
-    "build": "yarn build:prep && markdown-folder-to-html pages",
+    "build": "yarn build:prep && markdown-folder-to-html pages && cp -r keybase.txt .nojekyll CNAME static _pages",
     "build:clean": "rm -rf _pages && mkdir _pages",
-    "build:prep": "yarn build:clean && cp -r keybase.txt .nojekyll CNAME static _pages",
+    "build:prep": "yarn build:clean",
     "serve": "serve ./_pages -p 4000",
     "deploy": "yarn build && gh-pages -d _pages --dotfiles"
   },
   "author": "hobochild",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^1.1.0",
-    "serve": "^11.2.0",
-    "markdown-folder-to-html": "^2.3.0"
+    "gh-pages": "^2.2.0",
+    "markdown-folder-to-html": "^2.3.0",
+    "serve": "^11.2.0"
   }
 }

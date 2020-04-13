@@ -4,23 +4,27 @@
 
 <hr/>
 
-#### [Beryl](https://beryl.cc) (full-time) - feb 2017 - feb 2019
+#### [Beryl](https://beryl.cc) - feb 2017 - feb 2019
 
-> Beryl is a bike-share company in the UK and US with a focus on sustainability.
+> Beryl is a UK bike-share company with a focus on sustainability.
 
-position: lead software engineer
+Position: lead software engineer
 
 Responsiblities:
 
 - Steer engineering efforts with help from our product manager and CTO.
-- Build a large portion of the v1 product.
+- Built a large portion of the product.
 - Help build & manage the engineering team.
 
-#### [balena.io](https://balena.io) (full-time) - nov 2014 - nov 2017
+Techstack/buzzwords
+
+Python, Flask, Graphql, Apollo, Typescript, React, Kubernetes, Helm, GCP
+
+#### [balena.io](https://balena.io) - nov 2014 - nov 2017
 
 > balena.io is a PAAS that enables developers update and manage embedded Linux devices.
 
-position: full-stack developer/developer advocate
+Position: Frontend developer/developer advocate
 
 Responsibilities:
 
@@ -32,9 +36,13 @@ Responsibilities:
 - Build out tooling to auto-generate websites for open source projects - [landr](https://github.com/balena-io/landr)
 - Film & edit balena case-study videos, [example](https://vimeo.com/141222811)
 
+Techstack/buzzwords
+
+Node, coffee-script, typescript, react, docker
+
 #### [Firing Squad](http://firingsquad.co.za/) - nov 2013 - 2014
 
-position: frontend developer
+Position: frontend developer
 
 > Firing Squad was a digital agency building WordPress sites for some of South Africa'slargest companies including dimension data, Condé Nast
 > and PWC.
@@ -43,6 +51,10 @@ Responsibilities:
 
 - Convert PSDs to custom wordpress themes
 - Modernise some legacy websites
+
+Techstack/buzzwords
+
+A lil php, javascript, LESS, html
 
 <hr />
 

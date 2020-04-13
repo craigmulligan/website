@@ -12,4 +12,38 @@
 <body>
   <!--CONTENT-->
 </body>
+<script>
+ function addHighlight(event) {
+  const hoverableElements = document.querySelectorAll('[data-attr]')
+  for (let elm of hoverableElements) {
+    const styles = elm.getBoundingClientRect()
+    if (event.currentTarget.textContent === elm.dataset.dataAttr) {
+      let div = document.createElement('div')
+      div.className = 'anotherClass'
+      div.style.position = 'absolute'
+      div.style.content = ''
+      div.style.height = `${styles.height + 'px'}`
+      div.style.width = `${styles.width + 'px'}`
+      div.style.top = `${styles.top + 'px'}`
+      div.style.right = `${styles.right + 'px'}`
+      div.style.bottom = `${styles.bottom + 'px'}`
+      div.style.left = `${styles.left + 'px'}`
+      div.style.background = '#05f'
+      div.style.opacity = '0.25'
+      document.body.appendChild(div)
+    }
+  }
+}
+
+function removeHighlight(event) {
+  const anotherClass = document.getElementsByClassName('anotherClass')
+  for (let elm of anotherClass) {
+    document.body.removeChild(elm)
+  }
+}
+
+window.addEventListener('mouseover', addHighlight)
+
+window.addEventListener('mouseout', removeHighlight)
+</script>
 </html>
