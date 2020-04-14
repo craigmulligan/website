@@ -10,7 +10,7 @@ I'm not sure this is the case for all teams, but our internal CLI tools are bett
 
 To test this idea I created an [express.js middleware](https://github.com/hobochild/express-help-middleware) to add the `--help` convention to an endpoint. It should be fairly self explanatory with some code samples.
 
-Here is a basic api, it has a /greeting endpoint and a catch all to return 404s on unmatched urls.
+Here is a basic api, it has a greeting endpoint and a catch all to return 404s on unmatched urls.
 
 ```
 const express = require('express')
@@ -29,10 +29,11 @@ app.use(
     next()
   },
 )
-module.exports = app
+
+...
 ```
 
-Now lets add some helpful documentation. The `help` function takes a single string as a parameter and the only convention is that you lead with a description and then and instructions about the parameters or behaviour or what every else you like after a newline.
+Now lets add some helpful documentation. The `help` function takes a single string as a parameter and the only convention is that you lead with a description and then optionally follow with a line break and more detailed instructions.
 
 ```
 const express = require('express')
@@ -60,7 +61,8 @@ app.use(
   // display full routes on 404
   help('Welcome to my greeting API')
 )
-module.exports = app
+
+...
 ```
 
 Now we can use our favourite http client to explore our API.
@@ -96,6 +98,6 @@ Returns a greeting
 	  name: A word that you would like to be called by
 ```
 
-The middleware api is intentionally basic, the only structure it enforces is that you have provide a message when a user asks for help. Sure it's not machine readable but often it's just a human on the other end trying to figure out how to use your software.
+The middleware api is intentionally basic, the only structure it enforces is that you provide a message when a user asks for help. Sure it's not machine readable but often it's just a human on the other end trying to figure out how to use your software.
 
 I'm still chewing on this idea, if you have thoughts [please let me know](https://twitter.com/hobochildster)!
