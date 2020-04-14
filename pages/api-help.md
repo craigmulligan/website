@@ -1,10 +1,10 @@
-# API help option
+# Why don't APIs have the `--help` option?
 
 I was diagnosing a bug with a internal api at work awhile back and it gave me a potentially novel idea. The endpoint I was debugging was returning a `422`, the status code for invalid input. Because the api was undocumented, I had to open my text editor and take a look at the code to see what input was expected. As I was fumbling through the source code, I thought, wouldn't it be great if APIs had the same `--help` option as CLIs.
 
 For those unfamiliar, it's common practice for a commandline program to write usage instructions to standard out when a `--help` option is passed, it is conventional enough to warrant a [wikipedia](https://en.wikipedia.org/wiki/Usage_message) but it is not a standard.
 
-Imagine you could just do `curl -x POST http://my-api.com/user?help` And it returned some nice .html or .txt explaining how to use the endpoint? You could take this further and have the catch all (404) route return a list of domains that are exposed by this service for easily finding endpoints. You could also print the usage information on errors.
+Imagine you could just do `curl -x POST http://my-api.com/user?help` And it returned some nice `.html` or `.txt` explaining how to use the endpoint? You could take this further and have the catch all (404) route return a list of domains that are exposed by this service for easily finding endpoints. You could also print the usage information on errors.
 
 I'm not sure this is the case for all teams, but our internal CLI tools are better documented than our APIs. I think this is because most CLI frameworks come with the `--help` functionality baked in and for most http-frameworks documentation is an out of scope addon. There are standards like openAPI but in practice I rarely see it used, especially for internal endpoints. Maybe I'm in a circle of lazy developers but I haven't see an easily way to maintain it and keep the documentation close to the code.
 
@@ -65,7 +65,7 @@ module.exports = app
 
 Now we can use our favourite http client to explore our API.
 
-First we just hit the host. That will match our catchAll route and Welcome users to our api, as well as print all our available routes.
+First we just hit the host. That will match our catch all route and Welcome users to our api, as well as print all our available routes.
 
 So:
 
@@ -96,6 +96,6 @@ Returns a greeting
 	  name: A word that you would like to be called by
 ```
 
-The middleware api is intentionally basic, the only structure it enforces is that you have provide a message when a user asks for help. I think there are obviously better ways to do API documentation but when the choice is between nothing, I think it can be a pretty useful convention.
+The middleware api is intentionally basic, the only structure it enforces is that you have provide a message when a user asks for help. Sure it's not machine readable but often it's just a human on the other end trying to figure out how to use your software.
 
-Let me know what [you think](https://twitter.com/hobochildster)!
+I'm still chewing on this idea, if you have thoughts [please let me know](https://twitter.com/hobochildster)!
