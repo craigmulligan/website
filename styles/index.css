@@ -19,3 +19,12 @@ a:hover {
   @apply no-underline !important;
   border-bottom: none;
 }
+
+pre {
+  @apply p-4;
+  @apply bg-gray-800;
+  @apply text-white;
+  @apply font-mono;
+  @apply whitespace-pre;
+  overflow-x: scroll;
+}
