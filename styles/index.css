@@ -1,0 +1,21 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+body {
+  @apply bg-yellow-100;
+}
+
+a {
+  @apply border-yellow-400;
+  @apply no-underline !important;
+  @apply border-b-4;
+}
+
+a:hover {
+  @apply bg-yellow-400;
+  @apply no-underline !important;
+  border-bottom: none;
+}

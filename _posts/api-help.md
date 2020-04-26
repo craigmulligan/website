@@ -1,4 +1,10 @@
-# Why don't APIs have the `--help` option?
+---
+title: 'Why dont APIs have the --help option?'
+coverImage: '/assets/blog/preview/cover.jpg'
+date: '2020-03-16'
+ogImage:
+  url: '/assets/blog/hello-world/cover.jpg'
+---
 
 I was diagnosing a bug with a internal api at work awhile back and it gave me a potentially novel idea. The endpoint I was debugging was returning a `422`, the status code for invalid input. Because the api was undocumented, I had to open my text editor and take a look at the code to see what input was expected. As I was fumbling through the source code, I thought, wouldn't it be great if APIs had the same `--help` option as CLIs.
 

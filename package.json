@@ -1,20 +1,26 @@
 {
-  "name": "hobochild.tk",
+  "name": "blog-starter",
   "version": "1.0.0",
   "scripts": {
-    "build": "yarn build:prep && markdown-folder-to-html pages && cp -r keybase.txt .nojekyll CNAME static _pages",
-    "build:clean": "rm -rf _pages && mkdir _pages",
-    "build:prep": "yarn build:clean",
-    "serve": "npm run watch & serve ./_pages -p 4000",
-    "deploy": "yarn build && gh-pages -d _pages --dotfiles",
-    "watch": "watch 'npm run build' ./pages"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
-  "author": "hobochild",
-  "license": "ISC",
+  "dependencies": {
+    "classnames": "2.2.6",
+    "date-fns": "2.10.0",
+    "gray-matter": "4.0.2",
+    "isomorphic-unfetch": "3.0.0",
+    "next": "latest",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "remark": "11.0.2",
+    "remark-html": "10.0.0"
+  },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
-    "markdown-folder-to-html": "^2.3.0",
-    "serve": "^11.2.0",
-    "watch": "^1.0.2"
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "dotenv": "8.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.2.0"
   }
 }
