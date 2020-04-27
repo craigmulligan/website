@@ -54,4 +54,4 @@ Instead it should provide you with info on has not acked the message, `11/12 of 
 
 <hr/>
 
-These are just a few ideas on how we could make communication at work better. I have a few others brewing, like forking and merging threads. I plan to build a prototype to see how these ideas work in practice. If you have feedback or would like to be a beta tester please <href="mailto:hobochildster@gmail.com">reach out</a>.
+These are just a few ideas on how we could make communication at work better. I have a few others brewing, like forking and merging threads. I plan to build a prototype to see how these ideas work in practice. If you have feedback or would like to be a beta tester please <a href="mailto:hobochildster@gmail.com">reach out</a>.
