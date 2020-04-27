@@ -1,6 +1,5 @@
 ---
 title: 'Why dont APIs have the --help option?'
-coverImage: '/assets/blog/preview/cover.jpg'
 date: '2020-03-16'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'

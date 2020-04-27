@@ -20,7 +20,7 @@ export default function PostPreview({
       <div className="text-lg mb-4">
         <DateFormater dateString={date} />
       </div>
-      {excerpt && <p className="text-lg leading-relaxed mb-4">{excerpt}</p>}
+      {excerpt && <p className="text-lg leading-relaxed mb-3">{excerpt}</p>}
       {author && <Avatar name={author.name} picture={author.picture} />}
     </div>
   )
