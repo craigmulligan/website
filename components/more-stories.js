@@ -6,7 +6,7 @@ export default function MoreStories({ posts }) {
       <h3 className="mb-8 text-4xl font-bold tracking-tighter leading-tight">
         Writing
       </h3>
-      <div className="grid grid-cols-1 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
+      <div className="">
         {posts.map(post => (
           <PostPreview
             key={post.slug}
