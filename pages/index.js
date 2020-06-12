@@ -5,6 +5,10 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 
+export const config = {
+  unstable_runtimeJS: false
+}
+
 export default function Index({ allPosts }) {
   return (
     <>
@@ -29,7 +33,7 @@ export async function getStaticProps() {
     'author',
     'coverImage',
     'excerpt'
-  ])
+  ]).reverse()
 
   return {
     props: { allPosts }

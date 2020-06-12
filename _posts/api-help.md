@@ -17,7 +17,7 @@ To test this idea I created an [express.js middleware](https://github.com/hoboch
 
 Here is a basic api, it has a greeting endpoint and a catch all to return 404s on unmatched urls.
 
-```
+```javascript
 const express = require('express')
 const app = express()
 
@@ -40,7 +40,7 @@ app.use(
 
 Now lets add some helpful documentation. The `help` function takes a single string as a parameter and the only convention is that you lead with a description and then optionally follow with a line break and more detailed instructions.
 
-```
+```javascript
 const express = require('express')
 const app = express()
 const help = require('express-help-middleware')
