@@ -17,7 +17,7 @@ export default function Intro() {
           <a href="https://github.com/hobochild/clementine">projects</a>.
         </p>
         <p>
-          You can reach me <a href="mailto:hobochildster@gmail.com">here</a> ✌️.
+          You can reach me <a href="mailto:website@hobochild.com">here</a> ✌️.
         </p>
       </div>
     </section>
