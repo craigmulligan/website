@@ -1,6 +1,6 @@
 .PHONY: install 
 install:
-	curl -L https://github.com/hobochild/fig/releases/download/0.0.1/fig > fig && chmod +x ./fig
+	curl -L https://github.com/hobochild/fig/releases/download/0.0.2/fig > fig && chmod +x ./fig
 
 .PHONY: build 
 build:
