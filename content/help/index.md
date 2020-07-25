@@ -1,9 +1,8 @@
----
-title: 'Why dont APIs have the --help option?'
-date: '2020-03-16'
-ogImage:
-  url: '/assets/blog/hello-world/cover.jpg'
----
++++
+Layout = "page"
+Title = "Why dont APIs have the --help option?"
+Description = "Adding a help option to http apis"
++++
 
 I was diagnosing a bug with a internal api at work awhile back and it gave me a potentially novel idea. The endpoint I was debugging was returning a `422`, the status code for invalid input. Because the api was undocumented, I had to open my text editor and take a look at the code to see what input was expected. As I was fumbling through the source code, I thought, wouldn't it be great if APIs had the same `--help` option as CLIs.
 
@@ -76,13 +75,13 @@ First we just hit the host. That will match our catch all route and Welcome user
 
 So:
 
-```
+```bash
 curl localhost?help
 ```
 
 Returns
 
-```
+```bash
 Welcome to my greeting API
 
 [GET]:/greeting/:name - Returns a greeting
@@ -90,13 +89,13 @@ Welcome to my greeting API
 
 I can then do:
 
-```
+```bash
 curl localhost/greeting/:name?help
 ```
 
 And I'll get:
 
-```
+```bash
 Returns a greeting
 
   params:
@@ -105,4 +104,5 @@ Returns a greeting
 
 The middleware api is intentionally basic, the only structure it enforces is that you provide a message when a user asks for help. Sure it's not machine readable but often it's just a human on the other end trying to figure out how to use your software.
 
+I'm still chewing on this idea, if you have thoughts [please let me know](https://twitter.com/hobochildster)!
 I'm still chewing on this idea, if you have thoughts [please let me know](https://twitter.com/hobochildster)!

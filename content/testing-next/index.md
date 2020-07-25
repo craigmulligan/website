@@ -1,7 +1,8 @@
----
-title: 'A simple approach to testing next.js apps'
-date: '2020-06-12'
----
++++
+Layout = "page"
+Title = "A simple approach to testing next.js apps"
+Description = "How I test next.js projects"
++++
 
 The other day I was writing some tests for a next.js app, I couldn't find any straight forward recommendations on how to test both Pages and APIs with next.js so I thought I'd throw up some samples of my method.
 
@@ -23,7 +24,7 @@ Lets image we have the following Dashboard page, It fetches all the users in the
 
 ```javascript
 // pages/dashboard.js
-import client from 'nawr/client'
+import client from "nawr/client";
 
 const Dash = ({ users }) => (
   <div>
@@ -31,23 +32,23 @@ const Dash = ({ users }) => (
     <p>Here is a list of all users stored in the db</p>
     <ul>
       {users.map(({ email, id }) => {
-        return <li key={id}>{email}</li>
+        return <li key={id}>{email}</li>;
       })}
     </ul>
   </div>
-)
+);
 
 export const getServerSideProps = async ({ req, res }) => {
-  const { records } = await client.query('select * from users;')
+  const { records } = await client.query("select * from users;");
 
   return {
     props: {
       users: records
     }
-  }
-}
+  };
+};
 
-export default Dash
+export default Dash;
 ```
 
 I'd write a test case like this:
@@ -55,42 +56,42 @@ I'd write a test case like this:
 ```javascript
 // __tests__/pages/dashboard.test.js
 
-import renderer from 'react-test-renderer'
-import Dash, { getServerSideProps } from '../../pages/dashboard'
-import { createRequest, createResponse } from 'node-mocks-http'
-import { createUser } from '../../lib/db'
+import renderer from "react-test-renderer";
+import Dash, { getServerSideProps } from "../../pages/dashboard";
+import { createRequest, createResponse } from "node-mocks-http";
+import { createUser } from "../../lib/db";
 
-it('Renders correctly', async () => {
+it("Renders correctly", async () => {
   const users = [
     {
-      email: 'x@x.com',
+      email: "x@x.com",
       id: 1
     },
     {
-      email: 'y@y.com',
+      email: "y@y.com",
       id: 2
     }
-  ]
+  ];
 
-  return Promise.all(users.map(createUser))
+  return Promise.all(users.map(createUser));
 
   const req = createRequest({
-    method: 'GET'
-  })
-  const res = createResponse()
+    method: "GET"
+  });
+  const res = createResponse();
 
   const { props } = await getServerSideProps({
     req,
     res
-  })
+  });
 
   // assert getServerSideProps returns the correct props
-  expect(props.users).toBe(users)
+  expect(props.users).toBe(users);
 
   // asserts props + component result in the same snapshot
-  const tree = renderer.create(<Dash {...props} />).toJSON()
-  expect(tree).toMatchSnapshot()
-})
+  const tree = renderer.create(<Dash {...props} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
 ```
 
 A few things to notice, I'm not spinning up an http server instead I'm just mocking the Http request and response, I found the tests to be much cleaner and I still feel like I'm testing the important things. I'm just snapshotting the page component, if snapshot testing doesn't suite your use case I'd try out `@testing-library/react`.
@@ -103,69 +104,69 @@ For instance, if you have an api like this.
 
 ```javascript
 // /pages/api/logout.js
-import withSession from '../../../lib/session'
+import withSession from "../../../lib/session";
 
 export function handler(req, res) {
-  req.session.destroy()
-  res.send('Logged out')
+  req.session.destroy();
+  res.send("Logged out");
 }
 
-export default withSession(handler)
+export default withSession(handler);
 ```
 
 Notice I've exported the handler seperately, this is so I can easily mock the `withSession` higher order function in my tests. Generally when testing APIs I'd use `supertest` but after using the http stub method for pages I thought I'd use the same method for api calls, the test cases look something like:
 
 ```javascript
 // __tests__/pages/api/logout.test.js
-import { createUser } from '../../../lib/db'
-import { apply, options as sessionOptions, login } from '../../../lib/session'
-import { handler } from '../../../pages/api/auth/logout'
-import { createRequest, createResponse } from 'node-mocks-http'
-import cookie from 'cookie'
+import { createUser } from "../../../lib/db";
+import { apply, options as sessionOptions, login } from "../../../lib/session";
+import { handler } from "../../../pages/api/auth/logout";
+import { createRequest, createResponse } from "node-mocks-http";
+import cookie from "cookie";
 
-it('Returns 402 if auth fails', async () => {
+it("Returns 402 if auth fails", async () => {
   const newUser = {
-    email: 'x@x.com',
-    password: '123'
-  }
+    email: "x@x.com",
+    password: "123"
+  };
 
-  await createUser(newUser)
+  await createUser(newUser);
 
   const req = createRequest({
-    method: 'POST'
-  })
+    method: "POST"
+  });
 
-  const res = createResponse()
+  const res = createResponse();
 
   // Adds session to the request
-  await apply(req, res)
+  await apply(req, res);
 
   // log user in
-  await login(req, newUser)
+  await login(req, newUser);
 
   // call api
-  await handler(req, res)
+  await handler(req, res);
 
-  const cookies = cookie.parse(res.getHeader('set-cookie')[0])
-  expect(cookies[sessionOptions.cookieName]).toBeFalsy()
+  const cookies = cookie.parse(res.getHeader("set-cookie")[0]);
+  expect(cookies[sessionOptions.cookieName]).toBeFalsy();
 
-  expect(res.statusCode).toBe(200)
-})
+  expect(res.statusCode).toBe(200);
+});
 ```
 
 You may be wondering where I do my setup/cleanup around each test run. I generally add a global Jest `beforeEach` and `afterEach`. They'd look something like:
 
 ```javascript
 // setupTests.js
-import { up, down } from 'nawr/migrate'
+import { up, down } from "nawr/migrate";
 
 beforeEach(async () => {
-  return up()
-})
+  return up();
+});
 
 afterEach(() => {
-  return down({ to: 0 })
-})
+  return down({ to: 0 });
+});
 ```
 
 This above was mostly pseudo-code but it should be fairly easy to apply these methods to your app. If are after full working examples the code can be found [here](https://github.com/hobochild/boiler)

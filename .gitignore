@@ -1,4 +1,2 @@
-.env
-.now
-node_modules
-.next
+build
+fig

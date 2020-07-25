@@ -1,0 +1,81 @@
+{{define "header"}}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{.Meta.Description}}">
+        <title>{{.Meta.Title}}</title>
+        <style src="https://classic.yarnpkg.com/en/package/normalize.css"></style>
+        <style>
+          body {
+            background: rgb(255, 255, 240);
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+            font-size: 16px;
+          }
+          blockquote {
+            border-left: 8px solid  rgb(246, 224, 94);
+            margin: 1.5em 10px;
+            padding: 0.5em 15px;
+            font-style: italic;
+          }
+          blockquote p {
+            display: inline;
+          }
+          .main {
+             max-width: 800px;  
+             width: 90%;
+             margin: auto;
+          }
+          p, ul, ol {
+            font-size: 1.25rem;
+            line-height: 1.95rem;
+          }
+          li {
+            margin-bottom: 1.5rem;
+          }
+          .highlight {
+            background-color: #f6e05e;
+          }
+          a {
+            border-bottom: 4px solid  rgb(246, 224, 94);
+            text-decoration: none;
+            color: inherit;
+          }
+          a:hover {
+            background-color: #f6e05e;
+          }
+          pre {
+            overflow-x: scroll;
+          }
+          code pre {
+            padding: 20px;
+          }
+        </style>
+    </head>
+    <body>
+{{end}}
+
+{{define "footer"}}
+    </body>
+</html>
+{{end}}
+
+{{define "basic"}}
+    {{template "header" .}}
+    <main class="main">
+    <h1>{{.Meta.Title}}</h1>
+    {{.Meta.Content}}
+    </main>
+    {{template "footer" .}}
+{{end}}
+
+{{define "page"}}
+    {{template "header" .}}
+    <main class="main">
+    <a href="/">Home</a>
+    <h1>{{.Meta.Title}}</h1>
+    {{.Meta.Content}}
+    </main>
+    {{template "footer" .}}
+{{end}}
