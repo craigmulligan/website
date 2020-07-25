@@ -1,10 +1,8 @@
 +++
 Layout = "basic"
-Title = "Hobochild"
+Title = "Hi 👋,"
 Description = "hobochild's little home on the web"
 +++
-
-Hi 👋,
 
 I'm craig ([@hobochild](https://github.com/hobochild)), I love trying to build complex systems with simple software.
 
