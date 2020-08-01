@@ -1,5 +1,4 @@
 +++
-Layout = "page"
 Title = "Reimagining Chat"
 Description = "A fresh take on team chat"
 +++

@@ -1,5 +1,4 @@
 +++
-Layout = "page"
 Title = "A simple approach to testing next.js apps"
 Description = "How I test next.js projects"
 +++
@@ -22,7 +21,7 @@ I'll lump these two together because often the output of one is used as the inpu
 
 Lets image we have the following Dashboard page, It fetches all the users in the db prints them to screen.
 
-```javascript
+```jsx
 // pages/dashboard.js
 import client from "nawr/client";
 

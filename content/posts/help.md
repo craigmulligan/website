@@ -1,5 +1,4 @@
 +++
-Layout = "page"
 Title = "Why dont APIs have the --help option?"
 Description = "Adding a help option to http apis"
 +++
