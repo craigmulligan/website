@@ -1,6 +1,6 @@
 .PHONY: install 
 install:
-	curl -L https://github.com/hobochild/fig/releases/download/0.0.6/fig-linux-amd64 > fig
+	curl -L https://github.com/hobochild/fig/releases/download/0.0.8/fig-linux-amd64 > fig && chmod +x ./fig
 
 .PHONY: build 
 build:
@@ -8,4 +8,4 @@ build:
 
 .PHONY: build 
 dev:
-	./fig --dev
+	./fig --d
