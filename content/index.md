@@ -11,6 +11,8 @@ Right now I'm contracting remotely & focusing on my 🏄.
 
 If you'd like to work with me or simply chat you can reach me [here](mailto:website@hobochild.com) ✌️.
 
+[gpg public key](/publickey.txt).
+
 ## Tools
 
 > Small single purpose utilities.
