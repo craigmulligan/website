@@ -8,4 +8,4 @@ See [Makefile](/Makefile) for commands.
 
 - person *not* user
 - feature flags with kubernetes
-- ideas.
+- using hotwire.dev

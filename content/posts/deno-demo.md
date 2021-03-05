@@ -10,17 +10,17 @@ I've been following [deno](https://deno.land) from a far for a while now, I'm pa
 
 So I thought I'd dip my toes in and see how a packaged app would look. Deno has fairly unique dependency story compared to javascript's npm ecosystem. It pulls dependencies from remote urls on first run and then caches them until you clear the cache, very similar to how a browser loads a webpages dependencies. 
 
-If you want to skip the rest and just check out the code it can be found 👉 [here](https://github.com/hobochild/deno-demo)
+> If you want to skip the rest and just check out the code it can be found 👉 [here](https://github.com/hobochild/deno-demo)
 
 The first thing to figure out was how to create a reproducible build, turned out to be fairly easy you can create a lock file with: 
 
-```
+```sh
 deno cache --lock=lock.json --lock-write src/deps.ts
 ```
 
 And then install with that lock file using:
 
-```
+```sh
 deno cache --reload --lock=lock.json src/deps.ts
 ```
 
