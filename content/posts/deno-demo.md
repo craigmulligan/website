@@ -30,13 +30,13 @@ The results:
 
 [The code](https://github.com/hobochild/deno-demo) is fairly self explanatory. It's a [multi-stage docker build](https://github.com/hobochild/deno-demo/Dockerfile) for a bare-bones `oak` server (comparable to node.js's express). There are 3 useful make targets.
 
-1. `make size_uncompressed` - this will give you the [ondisk](ondisk) size of the image.
+1. `make size_uncompressed` - this will give you the ondisk size of the image.
 
-The on disk size comes out a 53.3mb (30mb of this is your executable) the rest is the apline image. (Node apline image is 116MB)
+The on disk size comes out a **53.3mb** (30mb of this is your executable) the rest is the apline image. (Node apline image is 116MB)
 
 1. `make size_compressed` - This will give you the gzipped image size which should be comparable to what you'd pull from a registry.
 
-The compressed size comes in at 21mb, the node.js apline image by comparison is 38.93 MB
+The compressed size comes in at **21mb**, the node.js apline image by comparison is 38.93 MB
 
 1. `make run` - run the server.
 
