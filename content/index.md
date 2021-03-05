@@ -39,6 +39,8 @@ If you'd like to work with me or simply chat you can reach me [here](mailto:webs
 
 ## Writing
 
+
+- [Packaging a deno app with Docker](/posts/deno-demo.html)
 - [A simple approach to testing next.js apps](/posts/testing.html)
 - [Reimagining Chat](/posts/chat.html)
 - [Why dont APIs have the --help option?](/posts/help.html)
