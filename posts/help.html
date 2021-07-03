@@ -1,0 +1,56 @@
+<p>I was diagnosing a bug with a internal api at work awhile back and it gave me a potentially novel idea. The endpoint I was debugging was returning a <code>422</code>, the status code for invalid input. Because the api was undocumented, I had to open my text editor and take a look at the code to see what input was expected. As I was fumbling through the source code, I thought, wouldn’t it be great if APIs had the same <code>--help</code> option as CLIs.<p>For those unfamiliar, it’s common practice for a commandline program to write usage instructions to standard out when a <code>--help</code> option is passed, it is conventional enough to warrant a <a href=https://en.wikipedia.org/wiki/Usage_message>wikipedia</a> but it is not a standard.<p>Imagine you could just do <code>curl -x POST http://my-api.com/user?help</code> And it returned some nice <code>.html</code> or <code>.txt</code> explaining how to use the endpoint? You could take this further and have the catch all (404) route return a list of domains that are exposed by this service for easily finding endpoints. You could also print the usage information on errors.<p>I’m not sure this is the case for all teams, but our internal CLI tools are better documented than our APIs. I think this is because most CLI frameworks come with the <code>--help</code> functionality baked in and for most http-frameworks documentation is an out of scope addon. There are standards like openAPI but in practice I rarely see it used, especially for internal endpoints. Maybe I’m in a circle of lazy developers but I haven’t see an easily way to maintain it and keep the documentation close to the code.<p>To test this idea I created an <a href=https://github.com/hobochild/express-help-middleware>express.js middleware</a> to add the <code>--help</code> convention to an endpoint. It should be fairly self explanatory with some code samples.<p>Here is a basic api, it has a greeting endpoint and a catch all to return 404s on unmatched urls.<pre><code class=language-javascript><pre style=background-color:#fff><span style=color:#000;font-weight:bold>const</span> express <span style=color:#000;font-weight:bold>=</span> require(<span style=color:#d14>&#39;express&#39;</span>)
+<span style=color:#000;font-weight:bold>const</span> app <span style=color:#000;font-weight:bold>=</span> express()
+
+app.get(
+  <span style=color:#d14>&#39;/greeting/:name&#39;</span>,
+  <span style=color:#000;font-weight:bold>function</span>(req, res) {
+    res.send(<span style=color:#d14>`</span><span style=color:#d14>Hello </span><span style=color:#d14>${</span>req.params.name<span style=color:#d14>}</span><span style=color:#d14>!</span><span style=color:#d14>`</span>)
+  }
+)
+
+app.use(
+  (req, res, next) =&gt; {
+    res.status(<span style=color:#099>404</span>)
+    next()
+  },
+)
+
+...
+</pre></code></pre><p>Now lets add some helpful documentation. The <code>help</code> function takes a single string as a parameter and the only convention is that you lead with a description and then optionally follow with a line break and more detailed instructions.<pre><code class=language-javascript><pre style=background-color:#fff><span style=color:#000;font-weight:bold>const</span> express <span style=color:#000;font-weight:bold>=</span> require(<span style=color:#d14>&#39;express&#39;</span>)
+<span style=color:#000;font-weight:bold>const</span> app <span style=color:#000;font-weight:bold>=</span> express()
+<span style=color:#000;font-weight:bold>const</span> help <span style=color:#000;font-weight:bold>=</span> require(<span style=color:#d14>&#39;express-help-middleware&#39;</span>)
+
+app.get(
+  <span style=color:#d14>&#39;/greeting/:name&#39;</span>,
+  help(<span style=color:#d14>`</span><span style=color:#d14>
+</span><span style=color:#d14>  Returns a greeting
+</span><span style=color:#d14>
+</span><span style=color:#d14>  params:
+</span><span style=color:#d14>    name: A word that would would like to be called by
+</span><span style=color:#d14>  </span><span style=color:#d14>`</span>),
+  <span style=color:#000;font-weight:bold>function</span>(req, res) {
+    res.send(<span style=color:#d14>`</span><span style=color:#d14>Hello </span><span style=color:#d14>${</span>req.params.name<span style=color:#d14>}</span><span style=color:#d14>!</span><span style=color:#d14>`</span>)
+  }
+)
+
+app.use(
+  (req, res, next) =&gt; {
+    res.status(<span style=color:#099>404</span>)
+    next()
+  },
+  <span style=color:#998;font-style:italic>// display full routes on 404
+</span><span style=color:#998;font-style:italic></span>  help(<span style=color:#d14>&#39;Welcome to my greeting API&#39;</span>)
+)
+
+...
+</pre></code></pre><p>Now we can use our favourite http client to explore our API.<p>First we just hit the host. That will match our catch all route and Welcome users to our api, as well as print all our available routes.<p>So:<pre><code class=language-bash><pre style=background-color:#fff>curl localhost?help
+</pre></code></pre><p>Returns<pre><code class=language-bash><pre style=background-color:#fff>Welcome to my greeting API
+
+<span style=color:#000;font-weight:bold>[</span>GET<span style=color:#000;font-weight:bold>]</span>:/greeting/:name - Returns a greeting
+</pre></code></pre><p>I can then do:<pre><code class=language-bash><pre style=background-color:#fff>curl localhost/greeting/:name?help
+</pre></code></pre><p>And I’ll get:<pre><code class=language-bash><pre style=background-color:#fff>Returns a greeting
+
+  params:
+	  name: A word that you would like to be called by
+</pre></code></pre><p>The middleware api is intentionally basic, the only structure it enforces is that you provide a message when a user asks for help. Sure it’s not machine readable but often it’s just a human on the other end trying to figure out how to use your software.<p>I’m still chewing on this idea, if you have thoughts <a href=https://twitter.com/hobochildster>please let me know</a>!
+I’m still chewing on this idea, if you have thoughts <a href=https://twitter.com/hobochildster>please let me know</a>!

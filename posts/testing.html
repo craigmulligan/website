@@ -1,0 +1,119 @@
+<p>The other day I was writing some tests for a next.js app, I couldn’t find any straight forward recommendations on how to test both Pages and APIs with next.js so I thought I’d throw up some samples of my method.<p>I usually lean as far towards integrations tests as is comfortable to write. Meaning I rarely stub things out but I still want the suite to be straight forward to write and quick to run so there is a balance to strike.<blockquote><p>With Next.js there are ~3 things I’ve found myself wanting to test.</blockquote><ol><li>Page Methods - eg. <code>getServerSideProps</code>, <code>getInitialProps</code>.<li>Page Components - eg. Given <code>x</code> props does the component render correctly.<li>Api endpoints - these are your typical rest api tests. eg <code>get /api/user/&lt;userId></code> and asserting it returns the expected values.</ol><p>Below I’ll run through each type of test case and provide some examples.<h3 id=1--2-page-methods--page-components>1 + 2 Page Methods & Page Components</h3><p>I’ll lump these two together because often the output of one is used as the input for the other so they are convenient to write together.<p>Lets image we have the following Dashboard page, It fetches all the users in the db prints them to screen.<pre><code class=language-react><pre style=background-color:#fff><span style=color:#998;font-style:italic>// pages/dashboard.js
+</span><span style=color:#998;font-style:italic></span><span style=color:#000;font-weight:bold>import</span> client from <span style=color:#d14>&#34;nawr/client&#34;</span>;
+
+<span style=color:#000;font-weight:bold>const</span> Dash <span style=color:#000;font-weight:bold>=</span> ({ users }) =&gt; (
+  &lt;<span style=color:#000080>div</span>&gt;
+    &lt;<span style=color:#000080>h3</span>&gt;User list&lt;/<span style=color:#000080>h3</span>&gt;
+    &lt;<span style=color:#000080>p</span>&gt;Here is a list <span style=color:#000;font-weight:bold>of</span> all users stored <span style=color:#000;font-weight:bold>in</span> the db&lt;/<span style=color:#000080>p</span>&gt;
+    &lt;<span style=color:#000080>ul</span>&gt;
+      {users.map(({ email, id }) =&gt; {
+        <span style=color:#000;font-weight:bold>return</span> &lt;<span style=color:#000080>li</span> <span style=color:#008080>key</span><span style=color:#000;font-weight:bold>=</span>{id}&gt;{email}&lt;/<span style=color:#000080>li</span>&gt;;
+      })}
+    &lt;/<span style=color:#000080>ul</span>&gt;
+  &lt;/<span style=color:#000080>div</span>&gt;
+);
+
+<span style=color:#000;font-weight:bold>export</span> <span style=color:#000;font-weight:bold>const</span> getServerSideProps <span style=color:#000;font-weight:bold>=</span> async ({ req, res }) =&gt; {
+  <span style=color:#000;font-weight:bold>const</span> { records } <span style=color:#000;font-weight:bold>=</span> await client.query(<span style=color:#d14>&#34;select * from users;&#34;</span>);
+
+  <span style=color:#000;font-weight:bold>return</span> {
+    props<span style=color:#000;font-weight:bold>:</span> {
+      users<span style=color:#000;font-weight:bold>:</span> records
+    }
+  };
+};
+
+<span style=color:#000;font-weight:bold>export</span> <span style=color:#000;font-weight:bold>default</span> Dash;
+</pre></code></pre><p>I’d write a test case like this:<pre><code class=language-react><pre style=background-color:#fff><span style=color:#998;font-style:italic>// __tests__/pages/dashboard.test.js
+</span><span style=color:#998;font-style:italic></span>
+<span style=color:#000;font-weight:bold>import</span> renderer from <span style=color:#d14>&#34;react-test-renderer&#34;</span>;
+<span style=color:#000;font-weight:bold>import</span> Dash, { getServerSideProps } from <span style=color:#d14>&#34;../../pages/dashboard&#34;</span>;
+<span style=color:#000;font-weight:bold>import</span> { createRequest, createResponse } from <span style=color:#d14>&#34;node-mocks-http&#34;</span>;
+<span style=color:#000;font-weight:bold>import</span> { createUser } from <span style=color:#d14>&#34;../../lib/db&#34;</span>;
+
+it(<span style=color:#d14>&#34;Renders correctly&#34;</span>, async () =&gt; {
+  <span style=color:#000;font-weight:bold>const</span> users <span style=color:#000;font-weight:bold>=</span> [
+    {
+      email<span style=color:#000;font-weight:bold>:</span> <span style=color:#d14>&#34;x@x.com&#34;</span>,
+      id<span style=color:#000;font-weight:bold>:</span> <span style=color:#099>1</span>
+    },
+    {
+      email<span style=color:#000;font-weight:bold>:</span> <span style=color:#d14>&#34;y@y.com&#34;</span>,
+      id<span style=color:#000;font-weight:bold>:</span> <span style=color:#099>2</span>
+    }
+  ];
+
+  <span style=color:#000;font-weight:bold>return</span> <span style=color:#0086b3>Promise</span>.all(users.map(createUser));
+
+  <span style=color:#000;font-weight:bold>const</span> req <span style=color:#000;font-weight:bold>=</span> createRequest({
+    method<span style=color:#000;font-weight:bold>:</span> <span style=color:#d14>&#34;GET&#34;</span>
+  });
+  <span style=color:#000;font-weight:bold>const</span> res <span style=color:#000;font-weight:bold>=</span> createResponse();
+
+  <span style=color:#000;font-weight:bold>const</span> { props } <span style=color:#000;font-weight:bold>=</span> await getServerSideProps({
+    req,
+    res
+  });
+
+  <span style=color:#998;font-style:italic>// assert getServerSideProps returns the correct props
+</span><span style=color:#998;font-style:italic></span>  expect(props.users).toBe(users);
+
+  <span style=color:#998;font-style:italic>// asserts props + component result in the same snapshot
+</span><span style=color:#998;font-style:italic></span>  <span style=color:#000;font-weight:bold>const</span> tree <span style=color:#000;font-weight:bold>=</span> renderer.create(&lt;<span style=color:#000080>Dash</span> {<span style=color:#008080>...props</span>} /&gt;).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+</pre></code></pre><p>A few things to notice, I’m not spinning up an http server instead I’m just mocking the Http request and response, I found the tests to be much cleaner and I still feel like I’m testing the important things. I’m just snapshotting the page component, if snapshot testing doesn’t suite your use case I’d try out <code>@testing-library/react</code>.<h3 id=3-api-calls>3. API calls</h3><p>I found a <a href=https://dev.to/metamas/testing-next-js-api-routes-55g3>post</a> which recommends using next’s internal API resolver launch a server run requests. This method works fine but I’d prefer not to use internal APIs if possible. The approach I’ve gone with is similar to our Page methods.<p>For instance, if you have an api like this.<pre><code class=language-javascript><pre style=background-color:#fff><span style=color:#998;font-style:italic>// /pages/api/logout.js
+</span><span style=color:#998;font-style:italic></span><span style=color:#000;font-weight:bold>import</span> withSession from <span style=color:#d14>&#34;../../../lib/session&#34;</span>;
+
+<span style=color:#000;font-weight:bold>export</span> <span style=color:#000;font-weight:bold>function</span> handler(req, res) {
+  req.session.destroy();
+  res.send(<span style=color:#d14>&#34;Logged out&#34;</span>);
+}
+
+<span style=color:#000;font-weight:bold>export</span> <span style=color:#000;font-weight:bold>default</span> withSession(handler);
+</pre></code></pre><p>Notice I’ve exported the handler seperately, this is so I can easily mock the <code>withSession</code> higher order function in my tests. Generally when testing APIs I’d use <code>supertest</code> but after using the http stub method for pages I thought I’d use the same method for api calls, the test cases look something like:<pre><code class=language-javascript><pre style=background-color:#fff><span style=color:#998;font-style:italic>// __tests__/pages/api/logout.test.js
+</span><span style=color:#998;font-style:italic></span><span style=color:#000;font-weight:bold>import</span> { createUser } from <span style=color:#d14>&#34;../../../lib/db&#34;</span>;
+<span style=color:#000;font-weight:bold>import</span> { apply, options as sessionOptions, login } from <span style=color:#d14>&#34;../../../lib/session&#34;</span>;
+<span style=color:#000;font-weight:bold>import</span> { handler } from <span style=color:#d14>&#34;../../../pages/api/auth/logout&#34;</span>;
+<span style=color:#000;font-weight:bold>import</span> { createRequest, createResponse } from <span style=color:#d14>&#34;node-mocks-http&#34;</span>;
+<span style=color:#000;font-weight:bold>import</span> cookie from <span style=color:#d14>&#34;cookie&#34;</span>;
+
+it(<span style=color:#d14>&#34;Returns 402 if auth fails&#34;</span>, async () =&gt; {
+  <span style=color:#000;font-weight:bold>const</span> newUser <span style=color:#000;font-weight:bold>=</span> {
+    email<span style=color:#000;font-weight:bold>:</span> <span style=color:#d14>&#34;x@x.com&#34;</span>,
+    password<span style=color:#000;font-weight:bold>:</span> <span style=color:#d14>&#34;123&#34;</span>
+  };
+
+  await createUser(newUser);
+
+  <span style=color:#000;font-weight:bold>const</span> req <span style=color:#000;font-weight:bold>=</span> createRequest({
+    method<span style=color:#000;font-weight:bold>:</span> <span style=color:#d14>&#34;POST&#34;</span>
+  });
+
+  <span style=color:#000;font-weight:bold>const</span> res <span style=color:#000;font-weight:bold>=</span> createResponse();
+
+  <span style=color:#998;font-style:italic>// Adds session to the request
+</span><span style=color:#998;font-style:italic></span>  await apply(req, res);
+
+  <span style=color:#998;font-style:italic>// log user in
+</span><span style=color:#998;font-style:italic></span>  await login(req, newUser);
+
+  <span style=color:#998;font-style:italic>// call api
+</span><span style=color:#998;font-style:italic></span>  await handler(req, res);
+
+  <span style=color:#000;font-weight:bold>const</span> cookies <span style=color:#000;font-weight:bold>=</span> cookie.parse(res.getHeader(<span style=color:#d14>&#34;set-cookie&#34;</span>)[<span style=color:#099>0</span>]);
+  expect(cookies[sessionOptions.cookieName]).toBeFalsy();
+
+  expect(res.statusCode).toBe(<span style=color:#099>200</span>);
+});
+</pre></code></pre><p>You may be wondering where I do my setup/cleanup around each test run. I generally add a global Jest <code>beforeEach</code> and <code>afterEach</code>. They’d look something like:<pre><code class=language-javascript><pre style=background-color:#fff><span style=color:#998;font-style:italic>// setupTests.js
+</span><span style=color:#998;font-style:italic></span><span style=color:#000;font-weight:bold>import</span> { up, down } from <span style=color:#d14>&#34;nawr/migrate&#34;</span>;
+
+beforeEach(async () =&gt; {
+  <span style=color:#000;font-weight:bold>return</span> up();
+});
+
+afterEach(() =&gt; {
+  <span style=color:#000;font-weight:bold>return</span> down({ to<span style=color:#000;font-weight:bold>:</span> <span style=color:#099>0</span> });
+});
+</pre></code></pre><p>This above was mostly pseudo-code but it should be fairly easy to apply these methods to your app. If are after full working examples the code can be found <a href=https://github.com/hobochild/boiler>here</a>
