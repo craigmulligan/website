@@ -1,6 +1,6 @@
 .PHONY: install 
 install:
-	curl -L https://github.com/hobochild/lil-lil/releases/download/0.0.2-rc.0/lil-linux- > lil && chmod +x ./lil
+	curl -L https://github.com/hobochild/lil/releases/download/0.0.2-rc.1/lil-x86_64-unknown-linux-gnu > lil
 
 .PHONY: build 
 build:
