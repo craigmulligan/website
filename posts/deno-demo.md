@@ -1,7 +1,9 @@
-+++
-Title = "Deno with Docker"
-Description = "A small experiment in packaging a deno app with docker"
-+++
+---
+title: "Deno with Docker"
+description: "A small experiment in packaging a deno app with docker"
+---
+
+# Deno with Docker
 
 I've been following [deno](https://deno.land) from a far for a while now, I'm particularly interested in it for two reasons.
 

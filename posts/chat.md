@@ -1,7 +1,9 @@
-+++
-Title = "Reimagining Chat"
-Description = "A fresh take on team chat"
-+++
+---
+title: "Reimagining Chat"
+description: "A fresh take on team chat"
+---
+
+# Reimagining Chat
 
 Last week [flowdock](http://status.flowdock.com/) a popular chat software for startups went down for a non-insignificant amount of time (over a day). It's users obviously politely expressed their disappointment on twitter. It got me thinking why haven't those users alreaady moved to a new platform.
 

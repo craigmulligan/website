@@ -1,7 +1,9 @@
-+++
-Title = "A simple approach to testing next.js apps"
-Description = "How I test next.js projects"
-+++
+---
+title: "A simple approach to testing next.js apps"
+description: "How I test next.js projects"
+---
+
+# A simple approach to testing next.js apps
 
 The other day I was writing some tests for a next.js app, I couldn't find any straight forward recommendations on how to test both Pages and APIs with next.js so I thought I'd throw up some samples of my method.
 
@@ -21,7 +23,7 @@ I'll lump these two together because often the output of one is used as the inpu
 
 Lets image we have the following Dashboard page, It fetches all the users in the db prints them to screen.
 
-```react
+```jsx
 // pages/dashboard.js
 import client from "nawr/client";
 
@@ -52,7 +54,7 @@ export default Dash;
 
 I'd write a test case like this:
 
-```react
+```jsx
 // __tests__/pages/dashboard.test.js
 
 import renderer from "react-test-renderer";

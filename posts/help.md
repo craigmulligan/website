@@ -1,7 +1,9 @@
-+++
-Title = "Why dont APIs have the --help option?"
-Description = "Adding a help option to http apis"
-+++
+---
+title: "Why dont APIs have the --help option?"
+description: "Adding a help option to http apis"
+---
+
+# Why dont APIs have the --help option?
 
 I was diagnosing a bug with a internal api at work awhile back and it gave me a potentially novel idea. The endpoint I was debugging was returning a `422`, the status code for invalid input. Because the api was undocumented, I had to open my text editor and take a look at the code to see what input was expected. As I was fumbling through the source code, I thought, wouldn't it be great if APIs had the same `--help` option as CLIs.
 
