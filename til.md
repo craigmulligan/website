@@ -1,0 +1,14 @@
+---
+title: "Today I learnt"
+description: "A list of interesting things I have learnt recently"
+---
+
+
+* 2021-10-19: The Irish main diet prior to potatoes, for ~1000 years was dairy & oats. Perhaps the reason I can stomach so many milkshakes.
+* 2021-10-20: There used to be laws up till as late as the early 2000s which meant margarine had to be coloured (pink) or couldn't be coloured yellow (to mimic butter). #99p. 
+* 2021-10-22: The inventor of the boogey board was a qualified mathematician from USC. He invented a bunch of other things like the remove-able fin system and a board that you could break into 3 for traveling.
+* 2021-10-28: [Female African Elephants Are Evolving Without Tusks Due to Ivory Poaching](https://theswaddle.com/female-african-elephants-are-evolving-without-tusks-due-to-ivory-poaching/).
+* 2021-10-31: [A milkman in Cornwall has saved a row of shops by dousing a fire with 320 pints of milk.](https://www.irishexaminer.com/world/arid-30037484.html)
+* 2021-11-01: In New Zealand they call civies day 'Mufti' day. This originates from India where British military wore robes on their days off and were said to look like a Mufti. A Mufti is an [Islamic Scholar](https://en.wikipedia.org/wiki/Mufti). As of writing this some schools in NZ have changed the name of their casual clothes day. 
+* 2021-11-06: A woman ran for US president in 1872.
+* 2021-11-06: [The first man to walk across the USA did it when he was 70, it took just over a 100 days.](https://ultrarunninghistory.com/edward-payson-weston/)

@@ -13,10 +13,9 @@ Right now I'm contracting remotely & focusing on my 🏄.
 
 If you'd like to work with me or simply chat you can reach me [here](mailto:website@hobochild.com) ✌️.
 
-_<small>Some small description of the table above. More info
-[here](/abc "something you want to see")</small>_
+[posts](/posts/index.md) [github](https://github.com/hobochild) [TIL](/til.md) 
 
-[posts](/posts/index.md) [TIL](/til.md) [gpg public key](/publickey.txt) [twitter](https://)
-[github](https://github.com/hobochild)
+<small>This site was built with [lil](https://github.com/hobochild).</small>
 
+<small>[GPG public key](/publickey.txt)</small>
 
