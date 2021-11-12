@@ -13,9 +13,8 @@ Right now I'm contracting remotely & focusing on my 🏄.
 
 If you'd like to work with me or simply chat you can reach me [here](mailto:website@hobochild.com) ✌️.
 
-[posts](/posts/index.md) [github](https://github.com/hobochild) [TIL](/til.md) 
+[posts](/posts/index.md) [github](https://github.com/hobochild/lil) [TIL](/til.md)
 
 <small>This site was built with [lil](https://github.com/hobochild).</small>
 
 <small>[GPG public key](/publickey.txt)</small>
-
