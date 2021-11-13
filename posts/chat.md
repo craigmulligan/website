@@ -51,7 +51,3 @@ This would mean that users could check their mentions at their own pace. A ping 
 5. **Always Acknowledge** - A common complaint with any fast paced communication system is that messages are often missed. How many times has a colleague asked you did you see my message on slack? Often when making an announcement, for instance `@dev-team deploy v1.0.1 is going out in 1hr please test your changes`. It's super important that all those mentioned, should ack that message. Right now there aren't great ways to do this, most teams just use emoji's or some arbitrary convention but then it's up to the sender to validate that everyone has responded.
 
 Instead it should provide you with info on has not ack'd the message, `11/12 of the @dev-team` have ack'd this. @hobochild has not seen it yet <would you like to ping them?>.`
-
-<hr/>
-
-These are just a few ideas on how we could make communication at work better. I have a few others brewing, like forking, merging and tagging threads. I plan to build a prototype to see how these ideas work in practice, a sort of middleground between slack and whatsapp aimed at small businesses. If you have feedback or would like to be a beta tester please <a href="mailto:hobochildster@gmail.com">reach out</a>.
