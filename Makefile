@@ -1,4 +1,4 @@
-LIL_VERSION=0.0.3-rc.3
+LIL_VERSION=0.0.3-rc.4
 
 .PHONY: install 
 install:
