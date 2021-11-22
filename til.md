@@ -3,6 +3,7 @@ title: "Today I learnt"
 description: "A list of interesting things I have learnt recently"
 ---
 
+* 2021-11-22: [Company gardens](https://en.wikipedia.org/wiki/Company%27s_Garden) in get's it namesake from the Dutch East India company. They farmed fresh produce for ships passing by as well as the local settlement.
 * 2021-11-12: [The lena image](https://en.wikipedia.org/wiki/Lenna) widely used as a standard in the field of digital image processing since 1973, when it was used in developing the jpeg, is from a Playboy centrefold of a Playboy Magazine. Later Lena, the model, worked for Kodak and became a [Shirley girl](https://www.wired.com/story/finding-lena-the-patron-saint-of-jpegs/) which was a photo card sent to Kodak printers to standardise film prints.
 * 2021-11-06: [The first man to walk across the USA did it when he was 70, it took just over a 100 days.](https://ultrarunninghistory.com/edward-payson-weston/)
 * 2021-11-06: A woman ran for US president in 1872.
