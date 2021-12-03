@@ -3,6 +3,8 @@ title: "Today I learnt"
 description: "A list of interesting things I have learnt recently"
 ---
 
+* 2021-12-02: [clickers](https://en.wikipedia.org/wiki/Clicker), commonly used to train dogs, were used in World War II by Allied paratroopers preceding and during Operation Overlord as a way of covertly identifying friend from foe. A soldier would click once and if two clicks were received in return from an unidentifiable soldier then his identification was confirmed. (Seems like an easy code to crack.)
+* 2021-12-01: In the wake of Napster (2000), [Rednex](https://en.wikipedia.org/wiki/Rednex), the swedish band behind "cotten eye joe", outlined a new strategy to become a entertainment group rather than a band. This meant they'd hire different artists in different regions (Australasia, Europe, America) to perform their songs live increasing their concert revenue.
 * 2021-11-26: The [Apgar score](https://en.wikipedia.org/wiki/Apgar_score) is a quick way for doctors to evaluate the health of all newborns at 1 and 5 minutes after birth. My mother told me in med school they used the Apgar score to evaluate men too. 
 * 2021-11-24: [17th century Japanese Fire Fighters](https://listverse.com/2016/08/05/10-surprising-facts-about-firefighters) would wet their uniforms to be come less flammable then with hooks and polls try pull down the building in order to smother the fire.
 * 2021-11-22: [Company gardens](https://en.wikipedia.org/wiki/Company%27s_Garden) in get's it namesake from the Dutch East India company. They farmed fresh produce for ships passing by as well as the local settlement.
