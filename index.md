@@ -19,7 +19,7 @@ If you'd like to work with me or simply chat you can reach me [here](mailto:webs
 <details>
 <summary>Posts</summary>
 
-- [A GKE Horror story.](posts/gke-dns.md)
+- [A GKE Horror story.](posts/gke-horror-story.md)
 - [Packaging a deno app with Docker](posts/deno-demo.md)
 - [A simple approach to testing next.js apps](posts/testing.md)
 - [Reimagining Chat](posts/chat.md)
