@@ -13,7 +13,7 @@ I was on support, which just involves monitoring our production alerting channel
 
 We noticed one frequently used endpoint response times were higher that usual. There was an easy optimization we could make to fix this, we released a quick fix but again it didn't noticeably reduce tail latency. At this point we noticed that all of our nodes had booted the previous night during our cluster maintenance window. After a little more investigation we realized our cluster had been upgraded the day before and then the nodes upgrade the night before. We then looked at our staging environments as they were on earlier release channels and noticed a when they were update they also recorded a moderate increase latency. However, because we don't have representative load on our staging environments no alerts were triggered.   
 
-> So at this point we knew the issue was triggered by an update to GKE `1.18.16`.
+> So at this point we knew the issue was triggered by a cluster upgrade. 
 
 We notified google but they weren't aware of any similar reports. Surely if there was an issue with that GKE version there would have been loads of customers experiencing this issue. What was different about our cluster/nodes or workloads? 
 
@@ -49,7 +49,7 @@ Surprisingly every 5th call or so would go through without a timeout, smelt like
 
 After a little more digging I found [this article](http://web.archive.org/web/20210226064036/https://blog.quentin-machu.fr/2018/06/24/5-15s-dns-lookups-on-kubernetes/), Which explains that there is a race conditions in dns clients when they do ipv4 and ipv6 queries in parallel using the same socket. It appears to be a kernel specific issue. Which has a patch in later debian version but is not patched in alpine. But you can get around it by using the `single-request-open` options. I applied the dns config change and it immediately solved the issue.
 
-```
+```yaml
 // deployment.yaml
 dnsConfig:
   options:
@@ -65,9 +65,11 @@ At this point, I setup a cluster with a single nginx server with 3 separate pods
 
 The results tracked with my current observations.
 
-* `dns-test-colocated` - dns queries timed out at 5s. 
-* `dns-testnot-colocated` - calls succeeded 
-* `dns-test-colocated-with-dns-fix`. - calls succeeded.
+| Pod                             | Description                                                                                       | Result  |
+|---------------------------------|---------------------------------------------------------------------------------------------------|---------|
+| dns-test-colocated              | Pod located on the same node as kube-dns.                                                         | Fail    |
+| dns-testnot-colocated           | Pod located on a different node to kube-dns.                                                      | Success |
+| dns-test-colocated-with-dns-fix | Pod located on the same node as kube-dns but with the `single-request-reopen` dns config applied. | Success |
 
 At this point I knew this had nothing to do with our code or workloads so I sent the cluster over to the google engineers to investigate. A few days they came back confirming that GKE `1.18.16` had a bug with dns clients co-located with kube-dns while the intra-node network visibility setting is enabled. 
 
@@ -75,7 +77,7 @@ I toggled off the intra-node visibility feature and immediately my dns tests wer
 
 The intra-node setting was enabled by our team a few weeks earlier to try get a better observability of our system outside of our services, fortunately it wasn't yet in use so it was an easy decision to switch off.
 
-Lessons learnt and relearnt.
+### Lessons learnt and re-learnt.
 
 1. It's almost always DNS.
 2. With production systems always stay on the well trodden path.
