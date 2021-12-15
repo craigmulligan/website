@@ -29,8 +29,9 @@ If you'd like to work with me or simply chat you can reach me [here](mailto:webs
 
 ---
 
-[TIL](/til.md) [github](https://github.com/hobochild)
+[TIL](/til.md) [CV](/cv.md) [github](https://github.com/hobochild)
 
 <small>This site was built with [lil](https://github.com/hobochild/lil).</small>
 
 <small>[GPG public key](/publickey.txt)</small>
+
