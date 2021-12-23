@@ -19,6 +19,7 @@ If you'd like to work with me or simply chat you can reach me [here](mailto:webs
 <details>
 <summary>Posts</summary>
 
+- [A brief introduction to PEP 582](posts/pep-582.md)
 - [A GKE Horror story.](posts/gke-horror-story.md)
 - [Packaging a deno app with Docker](posts/deno-demo.md)
 - [A simple approach to testing next.js apps](posts/testing.md)
