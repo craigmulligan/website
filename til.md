@@ -3,6 +3,8 @@ title: "Today I learnt"
 description: "A list of interesting things I have learnt recently"
 ---
 
+# Today I Learnt
+
 * 2021-12-27: [The Gospel of Matthew is the only one of the four canonical gospels to mention the Magi (aka the Three wise men)](https://en.wikipedia.org/wiki/Biblical_Magi). The gospel never mentions the number of Magi. Still, most western Christian denominations have traditionally assumed them to have been three in number, based on the statement that they brought three gifts. In Eastern Christianity, especially the Syriac churches, the Magi often number twelve.
 * 2021-12-23: [There is no wifi and cell phone signal in Green Bank West Virginia, Resident's who live within 10 miles of the Green Bank observatory are banned from Bluetooth devices and microwaves, unless they are contained in a metal box, known as a Faraday cage, which blocks electromagnetic fields](https://www.nytimes.com/2020/03/06/us/green-bank-west-virginia-quiet-zone.html). I worked at snowshoe a ski resort within the national quiet zone and it had restrictions on cell service but there was (very bad) wifi. The resort obviously doesn't advertise this so it was interesting to see how people coped without their phones, most arrived in late and in a mood because the couldn't load google maps and couldn't call the hotel for directions either.
 * 2021-12-15: [Every one of 850+ Wetherspoon's pubs](https://www.theguardian.com/lifeandstyle/shortcuts/2016/jan/10/wetherspoons-carpet-tumblr-blog) has a unique carpet specifically designed for each location. The [makers](https://www.axminster-carpets.co.uk/23-royal-warrant) of the carpets also have a royal warrant which means carpets for the queen & Wetherspoons come from the same place. 

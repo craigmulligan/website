@@ -8,10 +8,10 @@
 
 Beryl is a bike-share company in the UK and US with a focus on sustainability.
 
-After my plans to move from London to Australia were interrupted by covid. I was asked 
+After my plans to move from London to Australia were interrupted by COVID. I was asked 
 if I'd like to return to Beryl to help launch a few key projects. 
 
-> A year and a half later I'm still happily helping beryl change the way cities move.
+> A year and a half later, COVID is still a thing and I'm still with beryl changing the way cities move.
 
 <hr/>
 
