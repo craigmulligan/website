@@ -4,7 +4,7 @@ description: "hobochild's little home on the web"
 ---
 
 
-![A picture of Craig with too much suntan lotion on his nose.](./profile.jpeg#round)
+![A picture of Craig with too much suntan lotion on his nose.](./profile.webp#round)
 
 # Hi 👋,
 
