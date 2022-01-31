@@ -1,4 +1,4 @@
-LIL_VERSION=0.0.3-rc.4
+LIL_VERSION=0.0.3-rc.5
 
 .PHONY: install 
 install:
@@ -10,4 +10,4 @@ build:
 
 .PHONY: dev
 dev:
-	./lil --dev
+	./lil --dev --styleURL style.css

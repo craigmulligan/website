@@ -1,5 +1,6 @@
 /*! lil.css v0.1.0 | MIT License | github.com/hobochild/lil.css/ */
 /* The Basics */
+/* https://fireship.io/snippets/light-dark-mode-theme-css/ */
 :root {
   --accent-color: 235,87,87;
   --sans-serif-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -103,7 +104,7 @@ html {
 }
 
 article {
-  margin: 100px 0;
+  margin: 0;
 }
 
 article > * {
@@ -126,7 +127,8 @@ body {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.55;
-  font-family: Lyon-Text, Georgia, serif
+  font-family: Lyon-Text, Georgia, serif;
+  padding: 45px 30px;
 }
 
 blockquote p, h1, h2, h3, h4, h5, h6 {
@@ -173,6 +175,10 @@ mark {
   color: rgb(var(--text-color))
 }
 
+ul {
+  padding-inline-start: 2.2rem;
+}
+
 blockquote, dl, figure, form, ol, p, pre, table, ul {
   margin-bottom: 2.2rem;
 }
@@ -180,8 +186,12 @@ blockquote, dl, figure, form, ol, p, pre, table, ul {
 img {
   height: auto;
   max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
+
+img[src$='#round'] { border-radius: 100%;}
 
 button,
 input[type="button"],
