@@ -6,7 +6,7 @@ description: "A list of interesting things I have learnt recently"
 # Today I Learnt
 
 
-* 2022-02-01: [Tarrare](A french soldier and showman) known for his unusual appetite and eating habits. He was also caught several times within the hospital drinking from patients undergoing bloodletting, and attempting to eat the bodies in the hospital mortuary. This is the most ridiculous Wikipedia entry, hard to believe most of it, but well worth a read.   
+* 2022-02-01: [Tarrare, A french soldier and showman](https://en.m.wikipedia.org/wiki/Tarrare), known for his unusual appetite and eating habits. He was also caught several times within the hospital drinking from patients undergoing bloodletting, and attempting to eat the bodies in the hospital mortuary. This is the most ridiculous Wikipedia entry, hard to believe most of it, but well worth a read.
 * 2022-01-31: [The Magic Minute](https://en.m.wikipedia.org/wiki/Magic_minute) The magic minute is a custom in the United States House of Representatives that allows leaders to speak for as long as they wish, in contrast with other members, who have to adhere to strict time limits. The convention was notably used by Nancy Pelosi and Kevin McCarthy in 2018 and 2021 respectively to speak for records of over eight hours.
 * 2022-01-20: [The MGM Lion roar](https://en.wikipedia.org/wiki/Leo_the_Lion_(MGM)#cite_note-14) is dubbed with the roar of a tiger.
 * 2022-01-11: [Due to Japan's aging population, adult nappies have over taken baby nappy sales](https://www.theatlantic.com/business/archive/2013/07/in-rapidly-aging-japan-adult-diaper-sales-are-about-to-surpass-baby-diapers/277706/).
