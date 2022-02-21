@@ -1,13 +1,16 @@
-LIL_VERSION=0.0.3-rc.7
-
-.PHONY: install 
-install:
-	curl -L https://github.com/hobochild/lil/releases/download/$(LIL_VERSION)/lil-x86_64-unknown-linux-gnu > lil && chmod +x lil
+IMAGE=ghcr.io/getzola/zola:v0.15.1
 
 .PHONY: build 
-build:
-	./lil
+build: build_site minify
+
+.PHONY: build_site 
+build_site:
+	docker run -u "$$(id -u):$$(id -g)" -v ${PWD}:/app --workdir /app $(IMAGE) build
+
+.PHONY: minify 
+minify:
+	docker run -u "$$(id -u):$$(id -g)" -v ${PWD}:/app --workdir /app tdewolff/minify minify -r -v -a -o -r -a -o ./ public/
 
 .PHONY: dev
 dev:
-	./lil --dev --styleURL style.css
+	docker run -u "$$(id -u):$$(id -g)" -v ${PWD}:/app --workdir /app -p 8080:8080 -p 1024:1024 $(IMAGE) serve --interface 0.0.0.0 --port 8080 --base-url localhost -f

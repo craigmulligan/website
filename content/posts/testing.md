@@ -23,7 +23,7 @@ I'll lump these two together because often the output of one is used as the inpu
 
 Lets image we have the following Dashboard page, It fetches all the users in the db prints them to screen.
 
-```jsx
+```javascript
 // pages/dashboard.js
 import client from "nawr/client";
 
@@ -54,7 +54,7 @@ export default Dash;
 
 I'd write a test case like this:
 
-```jsx
+```javascript
 // __tests__/pages/dashboard.test.js
 
 import renderer from "react-test-renderer";
