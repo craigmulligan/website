@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  {% if page %}
+  <title>{{ page.title }}</title>
+  {% endif %}
+  {% block rss %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path=" rss.xml", trailing_slash=false)
+    }}">
+  {% endblock %}
+  <link rel="stylesheet" href={{ get_url(path="style.css" ) }} />
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <article>
+        {% block content %} {% endblock %}
+      </article>
+    </div>
+  </section>
+</body>
+
+</html>

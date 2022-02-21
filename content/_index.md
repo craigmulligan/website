@@ -19,20 +19,15 @@ If you'd like to work with me or simply chat you can reach me [here](mailto:webs
 <details>
 <summary>Posts</summary>
 
-- [A brief introduction to PEP 582](posts/pep-582.md)
-- [A GKE Horror story.](posts/gke-horror-story.md)
-- [Packaging a deno app with Docker](posts/deno-demo.md)
-- [A simple approach to testing next.js apps](posts/testing.md)
-- [Reimagining Chat](posts/chat.md)
-- [Why dont APIs have the --help option?](posts/help.md)
+- [A brief introduction to PEP 582](posts/pep-582)
+- [A GKE Horror story.](posts/gke-horror-story)
+- [Packaging a deno app with Docker](posts/deno-demo)
+- [A simple approach to testing next.js apps](posts/testing)
+- [Reimagining Chat](posts/chat)
+- [Why dont APIs have the --help option?](posts/help)
 
 </details>
 
 ---
 
-[TIL](/til.md) [CV](/cv.md) [github](https://github.com/hobochild)
-
-<small>This site was built with [lil](https://github.com/hobochild/lil).</small>
-
-<small>[GPG public key](/publickey.txt)</small>
-
+[TIL](/til) [CV](/cv) [GITHUB](https://github.com/hobochild) [RSS](/rss.xml)
