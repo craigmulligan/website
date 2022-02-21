@@ -5,10 +5,4 @@
 {% set page = section %}
 {% endif %}
 {{ page.content | safe }}
-<p>
-<a href="{{ get_url(path="@til.md", trailing_slash=false) }}">TIL</a>
-<a href="{{ get_url(path="@cv.md", trailing_slash=false) }}">CV</a>
-<a href="https://github.com/hobochild">GITHUB</a>
-<a href="{{ get_url(path="rss.xml", trailing_slash=false) }}">RSS</a>
-</p>
 {% endblock content %}
