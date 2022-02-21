@@ -1,6 +1,7 @@
 ---
 title: "Reimagining Chat"
 description: "A fresh take on team chat"
+date: 2021-01-01
 ---
 
 # Reimagining Chat

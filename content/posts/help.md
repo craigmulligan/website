@@ -1,6 +1,7 @@
 ---
 title: "Why dont APIs have the --help option?"
 description: "Adding a help option to http apis"
+date: 2021-05-21
 ---
 
 # Why dont APIs have the --help option?

@@ -2,12 +2,14 @@
   --accent-color: 235,87,87;
   --sans-serif-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --serif-font: Lyon-Text, Georgia, serif;
+  --pre-background-color: 45, 51, 59;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --text-color: 17, 17, 17;
         --background-color: 255, 254, 252;
+        --pre-background-color:  246, 248, 250;
     }
 }
 
@@ -47,7 +49,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.55;
-  font-family: Lyon-Text, Georgia, serif;
+  font-family: var(--serif-font); 
   padding: 45px 30px;
 }
 
@@ -234,8 +236,17 @@ pre table {
   border-collapse: collapse;
 }
 
+code {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgb(var(--pre-background-color));
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 1px 5px;
+}
+
 pre > code {
   padding: 1rem 1.4rem;
+  background: none;
   font-size: 1.6rem;
   white-space: pre;
   display: block;
@@ -277,6 +288,7 @@ small, small a {
   :root {
     --text-color: 255 ,255, 255;
     --background-color: 17, 17, 17;
+    --pre-background-color: 45, 51, 59;
   }
   mark {
     background: rgba(var(--accent-color), 0.8);

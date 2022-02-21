@@ -1,11 +1,11 @@
 # The URL the site will be built for
 base_url = "https://hobochild.com"
 
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
-generate_feed = true
 build_search_index = false
 hard_link_static = true
+feed_filename = "atom.xml"
+generate_feed = true
 
 [markdown]
 # Whether to do syntax highlighting
