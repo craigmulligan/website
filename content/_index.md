@@ -30,4 +30,4 @@ If you'd like to work with me or simply chat you can reach me [here](mailto:webs
 
 ---
 
-[TIL](/til) [CV](/cv) [GITHUB](https://github.com/hobochild) [RSS](/rss.xml)
+[TIL](/til) [CV](/cv) [GITHUB](https://github.com/hobochild) [RSS](/atom.xml)

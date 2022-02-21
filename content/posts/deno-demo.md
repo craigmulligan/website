@@ -1,6 +1,7 @@
 ---
 title: "Deno with Docker"
 description: "A small experiment in packaging a deno app with docker"
+date: 2021-06-21
 ---
 
 # Deno with Docker

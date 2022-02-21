@@ -1,6 +1,7 @@
 ---
 title: "A simple approach to testing next.js apps"
 description: "How I test next.js projects"
+date: 2021-02-02
 ---
 
 # A simple approach to testing next.js apps

@@ -1,9 +1,10 @@
 ---
 title: "A GKE Horror story"
 description: "Going down the networking rabbit hole."
+date: 2022-01-21
 ---
 
-# GKE horror story
+# GKE horror story 🎃
 
 I'll admit I really like Kubernetes for the most part. It makes it incredibly easy for developers to provision new servers and run jobs
 without interfacing with any operations teams or cloud specific APIs. And considering that we've been running it in production for a few years we've only hit a couple of serious issues.
