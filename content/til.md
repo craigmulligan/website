@@ -5,6 +5,7 @@ description: "A list of interesting things I have learnt recently"
 
 # Today I Learnt
 
+* 2022-03-28: [Figure skating (pre 1990) used to be judged based on how the skater drew special figures while skating on the ice](https://en.wikipedia.org/wiki/Special_figures)
 * 2022-03-22: [There is a mosquito festival in Russia](https://www.washingtonpost.com/news/morning-mix/wp/2016/08/15/with-43-bites-9-year-old-wins-tastiest-girl-competition-at-annual-russian-mosquito-festival/) with an event called "tastiest girl", were girls go into the forest and pick berries for 20mins, winner is decide by who has the most mosquito bites.
 * 2022-03-21: [The great french wine blight](https://en.wikipedia.org/wiki/Phylloxera#Vines_that_survived_phylloxera) was a severe blight of the mid-19th century that destroyed many of the vineyards in France and laid waste to the wine industry, it was caused by an aphid that originated in North America and was carried across the Atlantic in the late 1850s. The solution was to graft American vines which are resistant to the aphids at the root of European ones, today only a small number of [vines are not graft](https://en.wikipedia.org/wiki/Phylloxera#Vines_that_survived_phylloxera).
 * 2022-02-20: [Kansas City](https://en.wikipedia.org/wiki/Kansas_City,_Missouri) is in Missouri not Kansas.
