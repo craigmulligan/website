@@ -5,6 +5,7 @@ description: "A list of interesting things I have learnt recently"
 
 # Today I Learnt
 
+* 2022-07-20: [The Celsius temperature scale](https://en.wikipedia.org/wiki/Celsius) was initially created in reverse with 100 degrees as freezing and 0 as boiling. I think this was because waters melting point changes in relation to air pressure while freezing doesn't and perhaps their thermometer was easier to configure in "reverse".
 * 2022-07-16: The [aubergine](https://en.wikipedia.org/wiki/Eggplant), is also called the eggplant because there is a white variety that looks very much like hens eggs. They were also at one point called vegetable eggs.
 * 2022-06-28: In the UK according to [2021 figures](https://www.statista.com/statistics/298322/chicken-broiler-slaughterings-in-the-united-kingdom-uk-by-breed/) *21309* chickens are slaughtered every 10 minutes. Chicken is the only meat whose consumption has increased in recent years.
 * 2022-06-15: In Britain, the initial pricing structure was confusing. Costs depended on the number of pages sent, distance & the distance they travelled, also the receiver of the post would pay the fee. Several techniques developed to get around this like writing [crossed ways](https://en.wikipedia.org/wiki/Crossed_letter#/media/File:From_Caroline_Weston_to_Deborah_Weston;_Friday,_March_3,_1837_p3.jpg) to reduce the number of pages or hiding a message on the outside of the letter so receiver could reject the post without paying but still get the "message".
