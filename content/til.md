@@ -5,6 +5,7 @@ description: "A list of interesting things I have learnt recently"
 
 # Today I Learnt
 
+* 2022-12-08: [Alexander Selkirk](https://en.wikipedia.org/wiki/Alexander_Selkirk) the model for the fictional character of Robinson Crusoe was not shipwrecked like Crusoe, but decided to maroon the ship because he was concerned for it's seaworthiness. The ship did later sink. Selkirk spent 4 years and 4 months on the island before being rescued.   
 * 2022-07-20: [The Celsius temperature scale](https://en.wikipedia.org/wiki/Celsius) was initially created in reverse with 100 degrees as freezing and 0 as boiling. I think this was because waters melting point changes in relation to air pressure while freezing doesn't and perhaps their thermometer was easier to configure in "reverse".
 * 2022-07-16: The [aubergine](https://en.wikipedia.org/wiki/Eggplant), is also called the eggplant because there is a white variety that looks very much like hens eggs. They were also at one point called vegetable eggs.
 * 2022-06-28: In the UK according to [2021 figures](https://www.statista.com/statistics/298322/chicken-broiler-slaughterings-in-the-united-kingdom-uk-by-breed/) *21309* chickens are slaughtered every 10 minutes. Chicken is the only meat whose consumption has increased in recent years.
