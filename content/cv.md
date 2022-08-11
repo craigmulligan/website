@@ -4,14 +4,13 @@ description: "My professional Experience to Date."
 ---
 
 
-
 # Experience
 
 <hr/>
 
 ### [Beryl](https://beryl.cc) (contract) 
 
-<small>June 2020 - `now()`</small>
+<small>June 2020 - June 2022</small>
 
 Beryl is a bike-share company in the UK and US with a focus on sustainability.
 

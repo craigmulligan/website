@@ -1,6 +1,6 @@
 ---
 title: "Hi 👋"
-description: "hobochild's little home on the web"
+description: "Craig's little home on the web"
 ---
 
 
@@ -13,9 +13,9 @@ description: "hobochild's little home on the web"
 
 I have a penchant for surfing, knitting & [random facts.](/til)
 
-I'm currently living in London, and contracting for [beryl](https://beryl.cc/).
+I'm currently traveling in Mexico working on my Spanish & Surfing. 
 
-If you'd like to work with me or simply chat you can reach me [here](mailto:website@hobochild.com) ✌️.
+If you'd like to work with me or simply chat you can reach me [here](mailto:website@craigmulligan.com) ✌️.
 
 <details>
 <summary>Posts</summary>
