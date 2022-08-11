@@ -5,6 +5,7 @@ description: "A list of interesting things I have learnt recently"
 
 # Today I Learnt
 
+* 2022-12-08: [The Knights Templar](https://en.wikipedia.org/wiki/Knights_Templar#Organization) was a catholic military order in the middle ages and one of the first private banks. While Christians held the holy land Jerusalem, pilgrims would travel from Europe, but taking money on the journey would endanger them to thieves. The pilgrims would deposit their funds in for instance London or Paris and cash their "cheque" in Jerusalem.
 * 2022-12-08: [Alexander Selkirk](https://en.wikipedia.org/wiki/Alexander_Selkirk) the model for the fictional character of Robinson Crusoe was not shipwrecked like Crusoe, but decided to maroon the ship because he was concerned for it's seaworthiness. The ship did later sink. Selkirk spent 4 years and 4 months on the island before being rescued.   
 * 2022-07-20: [The Celsius temperature scale](https://en.wikipedia.org/wiki/Celsius) was initially created in reverse with 100 degrees as freezing and 0 as boiling. I think this was because waters melting point changes in relation to air pressure while freezing doesn't and perhaps their thermometer was easier to configure in "reverse".
 * 2022-07-16: The [aubergine](https://en.wikipedia.org/wiki/Eggplant), is also called the eggplant because there is a white variety that looks very much like hens eggs. They were also at one point called vegetable eggs.
