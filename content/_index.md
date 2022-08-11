@@ -13,9 +13,7 @@ description: "Craig's little home on the web"
 
 I have a penchant for surfing, knitting & [random facts.](/til)
 
-I'm currently traveling in Mexico working on my Spanish & Surfing. 
-
-If you'd like to work with me or simply chat you can reach me [here](mailto:website@craigmulligan.com) ✌️.
+I'm currently traveling for a few months in Mexico. If you'd like to work with me or simply chat you can reach me [here](mailto:website@craigmulligan.com) ✌️.
 
 <details>
 <summary>Posts</summary>
