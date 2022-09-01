@@ -11,7 +11,7 @@ description: "Craig's little home on the web"
 ## I'm Craig ([@hobochild](https://github.com/hobochild)), 
 ## I try to build <mark>complex systems</mark> with <mark>simple software</mark>.
 
-I have a penchant for surfing, knitting & [random facts.](/til)
+I have a penchant for [reading](/books), surfing, knitting & [random facts.](/til)
 
 I'm currently traveling for a few months in Mexico. If you'd like to work with me or simply chat you can reach me [here](mailto:website@craigmulligan.com) ✌️.
 
