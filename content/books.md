@@ -4,7 +4,7 @@ description: "A list of books I've read and some I recommend."
 ---
 # Bookshelf 
 
-Below is a ordered list of some of the books I've read. I've highlighted ones that I'd recommend.
+Below is an ordered list of some of the books I've read. I've highlighted ones that I'd recommend.
 - <a href='https://read.amazon.co.uk/?asin=B00C7EGV5U' target='blank'>Things Fall Apart (The African Trilogy Book 1) - Achebe, Chinua; </a>
 - <a href='https://read.amazon.co.uk/?asin=B00UXKJ1TI' target='blank'>A Whole Life - Seethaler, Robert; </a>
 - <mark><a href='https://read.amazon.co.uk/?asin=B002RUA538' target='blank'>We Have Always Lived in the Castle (Penguin Modern Classics) - Jackson, Shirley; </a></mark>
