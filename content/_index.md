@@ -29,4 +29,4 @@ I'm currently traveling for a few months in Mexico. If you'd like to work with m
 
 ---
 
-[CV](/cv) [GITHUB](https://github.com/hobochild) [RSS](/atom.xml)
+[TOOLS](tools) [CV](/cv) [GITHUB](https://github.com/hobochild) [RSS](/atom.xml)
