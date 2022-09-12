@@ -3,20 +3,14 @@ title: "Hi 👋"
 description: "Craig's little home on the web"
 ---
 
-
-![A picture of Craig with too much suntan lotion on his nose.](./profile.webp#round)
-
 # Hi 👋,
 
 ## I'm Craig ([@hobochild](https://github.com/hobochild)), 
 ## I try to build <mark>complex systems</mark> with <mark>simple software</mark>.
 
-I have a penchant for [reading](/books), surfing, knitting & [random facts.](/til)
-
 I'm currently traveling for a few months in Mexico. If you'd like to work with me or simply chat you can reach me [here](mailto:website@craigmulligan.com) ✌️.
 
-<details>
-<summary>Posts</summary>
+While you are here you might like to take a look at [tools I have made](/tools), [books I have read](/books), [facts I love](/til) or [what I'm working on.](/toysql)
 
 - [ACID - a brief definition](posts/acid)
 - [A brief introduction to PEP 582](posts/pep-582)
@@ -26,8 +20,6 @@ I'm currently traveling for a few months in Mexico. If you'd like to work with m
 - [Reimagining Chat](posts/chat)
 - [Why dont APIs have the --help option?](posts/help)
 
-</details>
-
 ---
 
-[TOOLS](tools) [CV](/cv) [GITHUB](https://github.com/hobochild) [RSS](/atom.xml)
+[rss](/atom.xml)
