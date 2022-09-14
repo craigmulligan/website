@@ -14,7 +14,7 @@ Imagine you could just do `curl -x POST http://my-api.com/user?help` And it retu
 
 I'm not sure this is the case for all teams, but our internal CLI tools are better documented than our APIs. I think this is because most CLI frameworks come with the `--help` functionality baked in and for most http-frameworks documentation is an out of scope addon. There are standards like openAPI but in practice I rarely see it used, especially for internal endpoints. Maybe I'm in a circle of lazy developers but I haven't see an easily way to maintain it and keep the documentation close to the code.
 
-To test this idea I created an [express.js middleware](https://github.com/hobochild/express-help-middleware) to add the `--help` convention to an endpoint. It should be fairly self explanatory with some code samples.
+To test this idea I created an [express.js middleware](https://github.com/craigmulligan/express-help-middleware) to add the `--help` convention to an endpoint. It should be fairly self explanatory with some code samples.
 
 Here is a basic api, it has a greeting endpoint and a catch all to return 404s on unmatched urls.
 
@@ -106,5 +106,5 @@ Returns a greeting
 
 The middleware api is intentionally basic, the only structure it enforces is that you provide a message when a user asks for help. Sure it's not machine readable but often it's just a human on the other end trying to figure out how to use your software.
 
-I'm still chewing on this idea, if you have thoughts [please let me know](https://twitter.com/hobochildster)!
-I'm still chewing on this idea, if you have thoughts [please let me know](https://twitter.com/hobochildster)!
+I'm still chewing on this idea, if you have thoughts [please let me know](https://twitter.com/craigmulliganster)!
+I'm still chewing on this idea, if you have thoughts [please let me know](https://twitter.com/craigmulliganster)!

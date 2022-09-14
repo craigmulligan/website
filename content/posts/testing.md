@@ -171,4 +171,4 @@ afterEach(() => {
 });
 ```
 
-This above was mostly pseudo-code but it should be fairly easy to apply these methods to your app. If are after full working examples the code can be found [here](https://github.com/hobochild/boiler)
+This above was mostly pseudo-code but it should be fairly easy to apply these methods to your app. If are after full working examples the code can be found [here](https://github.com/craigmulligan/boiler)

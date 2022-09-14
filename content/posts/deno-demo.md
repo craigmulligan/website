@@ -13,7 +13,7 @@ I've been following [deno](https://deno.land) from a far for a while now, I'm pa
 
 So I thought I'd dip my toes in and see how a packaged app would look. Deno has fairly unique dependency story compared to javascript's npm ecosystem. It pulls dependencies from remote urls on first run and then caches them until you clear the cache, very similar to how a browser loads a webpages dependencies. 
 
-> If you want to skip the rest and just check out the code it can be found 👉 [here](https://github.com/hobochild/deno-demo)
+> If you want to skip the rest and just check out the code it can be found 👉 [here](https://github.com/craigmulligan/deno-demo)
 
 The first thing to figure out was how to create a reproducible build, turned out to be fairly easy you can create a lock file with: 
 
@@ -31,7 +31,7 @@ The next was how to make that build as small as possible, I did this by using de
 
 The results:
 
-[The code](https://github.com/hobochild/deno-demo) is fairly self explanatory. It's a [multi-stage docker build](https://github.com/hobochild/deno-demo/Dockerfile) for a bare-bones `oak` server (comparable to node.js's express). There are 3 useful make targets.
+[The code](https://github.com/craigmulligan/deno-demo) is fairly self explanatory. It's a [multi-stage docker build](https://github.com/craigmulligan/deno-demo/Dockerfile) for a bare-bones `oak` server (comparable to node.js's express). There are 3 useful make targets.
 
 1. `make size_uncompressed` - this will give you the ondisk size of the image.
 

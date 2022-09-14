@@ -8,7 +8,7 @@ date: 2022-09-12
 
 Whenever I have been asked by another developer to define ACID. I have always had a bit of a hand wavy definition, describing it as <mark>"the important things that a database handles which you don't have to think about as an application developer"</mark>, I'll then fumble through through the acronym without much conviction. 
 
-Today I was re-reading the ACID chapter of [designing data-intensive applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) as research for my [toysql project](https://github.com/hobochild/toysql) and I thought I'd write a post to improve my future recall and definition.
+Today I was re-reading the ACID chapter of [designing data-intensive applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) as research for my [toysql project](https://github.com/craigmulligan/toysql) and I thought I'd write a post to improve my future recall and definition.
 
 I'll preface as Kleppmann does by saying that there is some ambiguity on the definition of ACID as many systems differ in their implementation. And so if a system claims to be ACID-complaint it's still worth investigating exactly what that means.
 
