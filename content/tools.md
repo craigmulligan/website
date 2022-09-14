@@ -30,3 +30,7 @@ This is a [tiny cli](https://github.com/craigmulligan/bump) to bump git tags in 
 ## Isolate changes
 
 This is a [github action](https://github.com/craigmulligan/isolate-changes-action) which restricts changes to specific files per PR. For instance if you want migrations to always be merged without code changes, you can add this CI check to ensure files aren't touched in migrations + any other folder.
+
+## Occupied
+
+My first flat share in London was a three story with 6 people and one bathroom, so running down the stairs to check if the bathroom was occupied became a common annoyance for everyone in the house. I [hooked up a raspberrypi to a reed-switch](https://hackster.io/craigmulligan/occupied-507dc6) with a fancy front-end to text people when it's their turn for the bathroom.
