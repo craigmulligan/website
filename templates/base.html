@@ -19,16 +19,21 @@
   <section class="section">
     <div class="container">
       <nav>
-          <ol>
-              <li><a href="/"><img class="logo" src="/profile.webp#round" alt="A picture of Craig with too much suntan lotion on his nose." width="50" height="50"></a>
-              <li><a href="/">home</a></li>
-              <li><a target="_blank" href="https://github.com/hobochild">github</a></li>
-              <li><a href="/cv">cv</a></li>
-          </ol>
+        <ol>
+          <li><a href="/"><img class="logo" src="/profile.webp#round"
+                alt="A picture of Craig with too much suntan lotion on his nose." width="50" height="50"></a>
+          <li><a href="/">home</a></li>
+          <li><a target="_blank" href="https://github.com/hobochild">github</a></li>
+          <li><a href="/cv">cv</a></li>
+        </ol>
       </nav>
       <article>
         {% block content %} {% endblock %}
       </article>
+      <hr />
+      <footer>
+        <a href="/atom.xml">rss</a>
+      </footer>
     </div>
   </section>
 </body>
