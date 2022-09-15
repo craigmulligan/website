@@ -5,7 +5,7 @@ description: "Craig's little home on the web"
 
 # Hi 👋,
 
-## I'm [Craig](https://github.com/craigmulligan)), 
+## I'm [Craig](https://github.com/craigmulligan), 
 ## I try to build <mark>complex systems</mark> with <mark>simple software</mark>.
 
 I'm currently traveling for a few months in Mexico. If you'd like to work with me or simply chat you can reach me [here](mailto:website@craigmulligan.com) ✌️.
