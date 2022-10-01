@@ -12,6 +12,8 @@ I'm currently traveling for a few months in Mexico. If you'd like to work with m
 
 While you are here you might like to take a look at the [tools I have made](/tools), [books I have read](/books), [facts I have collected](/til) or [what I'm working on.](/toysql)
 
+---
+
 ### Writing
 
 - [ACID - a brief definition](posts/acid)
