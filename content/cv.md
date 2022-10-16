@@ -55,12 +55,4 @@ Firing Squad was a digital agency building WordPress sites for some of South Afr
 
 I got my start at Firing Squad, converting PSDs to custom WordPress themes and maintaining some big custom WordPress installs.
 
-> Please don't ever make me do that again. 😂
-
-<hr />
-
-## Education
-
-#### University of Cape Town - 2009 - 2013
-
-- Honours Film and Media 🤷
+> Please don't ever make me use WordPress again. 😂
