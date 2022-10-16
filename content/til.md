@@ -5,6 +5,7 @@ description: "A list of interesting things I have learnt recently"
 
 # Today I Learnt
 
+* 2022-10-16: [Leeches as still commonly used in surgery today.](https://nymag.com/vindicated/2016/11/how-leeches-made-their-comeback.html). They add chemicals that dilate blood vessels and anticoagulants that reduce blood clots which make them useful in reattachment operations, skin grafts, and reconstructive plastic surgery.
 * 2022-10-07: Birds are not affected by [Capsicum](https://en.wikipedia.org/wiki/Capsaicin#:~:text=The%20seeds%20of,them%20from%20germinating.), the active ingredient in chili peppers. This is advantageous to the plant because birds don't have molars like mammals which destroy the seeds and prevent germination. Thus, natural selection may have led to increasing capsaicin production because it makes the plant less likely to be eaten by animals that do not help it disperse. 
 * 2022-09-23: [Research](https://bigthink.com/life/cats-find-cat-people-disturbing/) suggests that cats are more likely to dislike cat people. Reasoning that cat-people are less likely to follow cat best practices. Like waiting for a cat to approach them and only stroking them in specific areas.
 * 2022-09-11: [In Victorian London postal delivery routes would go by every house 12 times a day](https://www.nytimes.com/2010/02/21/business/21digi.html)
