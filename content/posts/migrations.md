@@ -66,6 +66,6 @@ The simplest solution is to run a new database for every branch, but this can be
 
 ## Predictions
 
-Database tooling is a huge problem space to tackle. It feels like most of the tools I've looked at solve a subset of issues. It will be interesting to see how they interop or co-opted each others features. 
+Database's have a huge problem space to tackle, I think that's why we are seeing a trend where new database are being built around existing databases like postgres, mysql & sqlite rather than being built from scratch. It allows for new features while still offering an escape hatch when things are unsupported.
 
-I'd bet that in the future there will be a standardised "schema" language to define data models. Databases will accept these declarative schema files and migrate their schema and data to the new desired state, therefore making migrations declarative and mostly invisible to the application developer.
+I'd bet that in the future there will be a standardised "schema" language to define data models. These new databases will accept these declarative schema files and migrate their schema and data to the new desired state, therefore making migrations declarative and mostly invisible to the application developer.
