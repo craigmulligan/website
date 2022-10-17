@@ -32,6 +32,12 @@ pre {
   overflow: auto;
 }
 
+code {
+  background-color: rgba(222,222,222,0.3);
+  color: crimson;
+  padding: 0 4px;
+}
+
 footer {
   margin-bottom: 4rem; 
 }
