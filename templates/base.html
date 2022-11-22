@@ -5,9 +5,15 @@
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   {% if page %}
   <title>{{ page.title }}</title>
   {% endif %}
+
+  {% if section %}
+  <title>{{ section.title }}</title>
+  {% endif %}
+
   {% block rss %}
   <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path=" atom.xml", trailing_slash=false)
     }}">

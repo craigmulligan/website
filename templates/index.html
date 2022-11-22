@@ -1,8 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
-{% if section %}
-{% set page = section %}
-{% endif %}
-{{ page.content | safe }}
+{{ section.content | safe }}
 {% endblock content %}
