@@ -1,5 +1,5 @@
 ---
-title: "Hi 👋"
+title: "Craig's website"
 description: "Craig's little home on the web"
 ---
 
