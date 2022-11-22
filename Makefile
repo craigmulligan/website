@@ -1,15 +1,8 @@
 IMAGE=ghcr.io/getzola/zola:v0.15.1
 
 .PHONY: build 
-build: build_site minify
-
-.PHONY: build_site 
-build_site:
+build:
 	docker run -u "$$(id -u):$$(id -g)" -v ${PWD}:/app --workdir /app $(IMAGE) build
-
-.PHONY: minify 
-minify:
-	docker run -u "$$(id -u):$$(id -g)" -v ${PWD}:/app --workdir /app tdewolff/minify minify -r -v -a -o -r -a -o ./ public/
 
 .PHONY: dev
 dev:
