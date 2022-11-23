@@ -1,5 +1,6 @@
 import urllib.request
 import csv
+import io
 
 url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBqec4IEfgDZG8Tpv715dZlN6C1YMrPTfJg7PFq2y858Prmw51uMnNsBPAdN40tW_WNG0KDi0Kvlgi/pub?gid=295678645&single=true&output=csv"
 header = """
@@ -14,7 +15,8 @@ Below is an ordered list of some of the books I've read. I've highlighted ones t
 
 
 contents = urllib.request.urlopen(url).read()
-reader = csv.reader(contents.decode("utf-8").splitlines())
+
+reader = csv.DictReader(io.StringIO(contents.decode("utf-8")))
 
 with open("content/books.md", "w+") as file:
     file.seek(0)
@@ -22,11 +24,10 @@ with open("content/books.md", "w+") as file:
     file.write("\n")
 
     for row in reader:
-        if row[5] == "EBOOK": 
-            item = f"<a href='{row[3]}' target='blank'>{row[1]} - {row[2]}</a>" 
-            if int(row[8]) > 0:
-                item = "<mark>" + item + "</mark>"
-           
-            file.write("- ")
-            file.write(item)
-            file.write("\n")
+        item = f"<a href='http://www.amazon.co.uk/dp/{row['ASIN']}' target='blank'>{row['Title']} - {row['Author']}</a>"
+        if int(row["Recommend"]) > 0:
+            item = "<mark>" + item + "</mark>"
+
+        file.write("- ")
+        file.write(item)
+        file.write("\n")
