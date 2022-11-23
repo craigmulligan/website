@@ -8,7 +8,9 @@ date: 2022-11-21
 
 As a [surfer](https://en.m.wikipedia.org/wiki/Surfing) you are constantly trying to assess the best time to surf. This not only involves looking at the forecast and conditions but also gauging when it's going to be most crowded. Sometimes you'll get more waves if you surf when the conditions are a little worse but the spot is less crowded - an exercise in game theory. 
 
-In order to make the best decision on when to surf you need forecast data on both the waves conditions and the crowd. The former is easy to get from [surfline](https://www.surfline.com/) but there is no data on surf crowds... YET! Crowdfactor aims to provide an interface similar to google maps *["popular times"](https://blog.google/products/maps/maps101-popular-times-and-live-busyness-information/)*, giving a more quantitative approach on deciding when to surf.
+In order to make the best decision on when to surf you need forecast data on both the waves conditions and the crowd. The former is easy to get from [surfline](https://www.surfline.com/) but there is no data on surf crowds... YET! 
+
+Crowdfactor aims to provide an interface similar to google maps *["popular times"](https://blog.google/products/maps/maps101-popular-times-and-live-busyness-information/)*, giving a more quantitative approach on deciding when to surf.
 
 ![Google popular times](/img/populartimes.png)
 
