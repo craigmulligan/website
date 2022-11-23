@@ -10,7 +10,7 @@ As a [surfer](https://en.m.wikipedia.org/wiki/Surfing) you are constantly trying
 
 In order to make the best decision on when to surf you need forecast data on both the waves conditions and the crowd. The former is easy to get from [surfline](https://www.surfline.com/) but there is no data on surf crowds... YET! 
 
-Crowdfactor aims to provide an interface similar to google maps *["popular times"](https://blog.google/products/maps/maps101-popular-times-and-live-busyness-information/)*, giving a more quantitative approach on deciding when to surf.
+The idea is that Crowdfactor provides an interface similar to google maps *["popular times"](https://blog.google/products/maps/maps101-popular-times-and-live-busyness-information/)*, giving a more quantitative approach on deciding when to surf.
 
 ![Google popular times](/img/populartimes.png)
 
