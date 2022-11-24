@@ -10,7 +10,7 @@ description: "A list of books I've read and some I recommend."
 ---
 # Bookshelf 
 
-Below is an ordered list of some of the books I've read. I've highlighted ones that I'd recommend.
+Some of the books I've read. I've highlighted ones that I'd recommend.
 """.strip()
 
 
