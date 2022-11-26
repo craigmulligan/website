@@ -16,6 +16,7 @@ While you are here you might like to take a look at the [tools I have made](/too
 
 ### Writing
 
+- [Better Spelling Bee hints](posts/beehint/)
 - [Predicting surf crowds](posts/crowdfactor/)
 - [New database tooling & migrations](posts/migrations)
 - [ACID - a brief definition](posts/acid)
