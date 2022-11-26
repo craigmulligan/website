@@ -5,7 +5,11 @@ description: "A list of tools I've made"
 
 # Tiny tools
 
-This is incomplete list of small tools I've written to make my life marginally easier.
+This is incomplete list of small tools I've written to make my life marginally better.
+
+## Beehint 
+
+[Beehint](/posts/beehint) is a browser extension which makes NYT's spellingbee hints easier to read.
 
 ## The wave cal
 
