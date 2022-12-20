@@ -5,6 +5,7 @@ description: "A list of interesting things I have learnt recently"
 
 # Today I Learnt
 
+* 2022-12-20: Map makers add fictious features like [Trap Streets](https://en.wikipedia.org/wiki/Trap_street) or [Phantom towns](https://en.wikipedia.org/wiki/Phantom_settlement) to protect themselves against plagary. In one case, Agloe, New York, was invented on a 1930s map as a copyright trap. In 1950, a general store was built there and named Agloe General Store, as that was the name seen on the map. Thus, the phantom settlement became a real one.
 * 2022-11-30: London was well serviced by [electric trams](https://en.wikipedia.org/wiki/Trams_in_London#First_electric_trams) from 1903 to around 1950, until they were replaced with diesel buses, because they were "eminently flexible and much cheaper". Ironically now we are trying to electricity the transport system again. 
 * 2022-11-22: 9 states in the USA implement the [Idaho stop law](https://en.wikipedia.org/wiki/Idaho_stop), which allows cyclists to treat traffic lights as stop signs and stop signs as yields, meaning that they can ride through both if it is safe to do so.
 * 2022-11-11: A standard cup of coffee requires **[140 litres](https://waterfootprint.org/media/downloads/Report14_1.pdf) of water** to produce. Most of which is used to grow the coffee plant itself. On the other for a standard cup of tea requires [34 litre](https://waterfootprint.org/media/downloads/Report14_1.pdf).
