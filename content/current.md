@@ -3,7 +3,7 @@ title: "What I'm working on right now"
 description: "My current project or job."
 ---
 
-I'm currently moving to the USA, while I wait for my VISA I'm fun-employed & traveling the world, right now I'm in New Zealand.
+I'm currently moving to the USA, while I wait for my VISA, I'm fun-employed & traveling around the world, right now I'm in New Zealand.
 
 I have a few projects on the go.
 
