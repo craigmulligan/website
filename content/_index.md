@@ -8,7 +8,7 @@ description: "Craig's little home on the web"
 ## I'm [Craig](https://github.com/craigmulligan), 
 ## I try to build <mark>complex systems</mark> with <mark>simple software</mark>.
 
-I'm currently traveling around the world. If you'd like to work with me or simply chat you can reach me [here](mailto:website@craigmulligan.com) ✌️.
+I used to work in the UK, at [beryl](https://beryl.cc) and [balena](https://balena.io) but I'm relocating to California with my [partner](https://tylergindraux.com/) soon.
 
 While you are here you might like to take a look at the [tools I have made](/tools), [books I have read](/books), [facts I have collected](/til) or [what I'm working on.](/current)
 
