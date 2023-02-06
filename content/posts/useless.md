@@ -14,11 +14,13 @@ I've typically been picking things up that have a steep but short learning curve
 
 Here are some examples of skills I've learnt recently. 
 
-__NOTE__: I'm not a master in any of these things. I've just learnt enough to get the enjoyment and confidence from initial learning curve. For instance for juggling, I can juggle 3 balls, I haven't tried 4. I might in the future but it might give me diminishing returns over learning an entirely new skill.
+__NOTE__: I haven't mastered any of these things. I've just learnt enough to get the enjoyment and confidence from initial learning curve. For instance I can juggle 3 balls, I haven't tried 4. I might in the future but it'll likely give me diminishing returns over learning an entirely new skill.
 
 * Juggling
-* Cubing
+* Rubiks Cubing
 * Knitting
 * Mental Math
 * Lock Picking (WIP)
 * Morse Code (WIP)
+* [Finger whistling](https://www.youtube.com/watch?v=G8Oz_ELAjNg&feature=youtu.be&ab_channel=Howcast)
+* [folding t-shirts](https://www.youtube.com/watch?v=BAxhr0j0thY)
