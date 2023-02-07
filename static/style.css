@@ -73,18 +73,21 @@ li {
 }
 
 pre {
-  padding: 1rem;
+  padding: 10rem;
   overflow: auto;
 }
 
-code {
+/* if the code block already has  */
+/* a class it's probably already highlighted */
+/* by the zola syntax highlighter. */
+code:not([class]) {
   background-color: rgba(222,222,222,0.3);
   color: crimson;
   padding: 0 4px;
 }
 
 footer {
-  margin-bottom: 4rem; 
+  margin-bottom: 40rem; 
 }
 
 nav {
@@ -122,12 +125,12 @@ nav li:first-child {
 blockquote {
   max-width: 940px;
   text-align: center;
-  margin: 4.5rem auto;
+  margin: 45rem auto;
   font-weight: bold;
 }
 
 @media screen and (max-width: 700px) {
   main {
-    padding: 0 2rem;
+    padding: 0 20rem;
   }
 }
