@@ -3,11 +3,9 @@ title: "Craig's website"
 description: "Craig's little home on the web"
 ---
 
-# Hi 👋, I'm [Craig](https://github.com/craigmulligan).
+Hi 👋, I'm [Craig](https://github.com/craigmulligan).
 
-<br />
-
-## I try to build <mark>complex systems</mark> with <mark>simple software</mark>.
+I try to build <mark>complex systems</mark> with <mark>simple software</mark>.
 
 I used to work in the UK, at [beryl](https://beryl.cc) and [balena](https://balena.io) but I'm relocating to California with my [partner](https://tylergindraux.com/) soon.
 

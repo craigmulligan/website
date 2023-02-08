@@ -4,12 +4,12 @@ description: "Going down the networking rabbit hole."
 date: 2022-01-21
 ---
 
-# GKE horror story 🎃
+# GKE horror story
 
 I'll admit I really like Kubernetes for the most part. It makes it incredibly easy for developers to provision new servers and run jobs
 without interfacing with any operations teams or cloud specific APIs. And considering that we've been running it in production for a few years we've only hit a couple of serious issues.
 
-Below I'll recount a incident that baffled my team and I for a few days.
+> Below I'll recount a incident that baffled my team and I for a few days.
 
 Around lunch time on my support shift, I noticed a spike in our tail latency with error rates rising to around ~30% as well. Our traffic usually starts to spike around midday, but this particular day's traffic wasn't abnormal. Even though I couldn't see any evidence that our services were overwhelmed I horizontal scaled our core services. As I expected scaling these services didn't have any impact, I then notified the rest of the team and pulled everyone into a call.
 
@@ -23,7 +23,7 @@ Unfortunately our metrics weren't that helpful in diagnosing the issue. Our indi
 
 We added some more logging to our proxy server to try get some more info. On deploying this our error rates subsided to a much more manageable 3-5%. We knew we hadn't made any code changes but that pods had shuffled around on deployment. This gave us a clue that it was related to the nodes rather than the running pods or code. 
 
-Once we grouped our latency graphs by node, it was clear that some nodes were responsible for high latencies while others were perfectly fine. This powerfully illustrates the downsides of abstracting workloads from the machines they are running on, if we weren't running on k8s we likely would have looked at the underlying machines much sooner.
+<mark>Once we grouped our latency graphs by node, it was clear that some nodes were responsible for high latencies while others were perfectly fine.</mark> This powerfully illustrates the downsides of abstracting workloads from the machines they are running on, if we weren't running on k8s we likely would have looked at the underlying machines much sooner.
 
 We sent these node ids to the team at GCP for further investigation. Unfortunately they came back and said all the nodes look perfectly healthy and there were no differences between a good and bad node in our examples.
 
@@ -31,19 +31,19 @@ Huh, back to the drawing board. Because our core services in production were now
 
 This gave us a little more breathing room so I started taking a deeper look at these bad nodes. I ssh'd into one of our running pods and started playing around. I tried to call another service and immediately noticed something strange.
 
-```
-/app $ curl -so /dev/null -w '%{time_total}\\n' http://xyz-service
+```sh
+$ curl -so /dev/null -w '%{time_total}\\n' http://xyz-service
 2.514076
 ```
 
 Woah, 2.5 seconds, usually this endpoint would be a couple hundred milliseconds max. I wonder what's taking so long, could it be DNS? 
 
-```
-/app $ curl -so /dev/null -w '%{time_namelookup}\\n' http://xyz-service 
+```sh
+$ curl -so /dev/null -w '%{time_namelookup}\\n' http://xyz-service 
 2.504370
 ```
 
-> Bingo, it's always DNS.
+> Bingo
 
 We are running an alpine image which has it's DNS timeout configured to 2.5s, Debian is usually set to 5s which explains some of the other timings we were seeing.
 
