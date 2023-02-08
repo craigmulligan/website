@@ -14,6 +14,10 @@ html {
   font-variant-numeric: oldstyle-nums;
   text-size-adjust: 100%;
   margin: 0;
+  /* // Help prevent overflow of long words/names/URLs */
+  overflow-wrap: break-word;
+  /* // Optional, not supported for all languages */
+  hyphens: auto;
 }
 
 html:disabled {

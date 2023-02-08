@@ -4,13 +4,15 @@ description: "An argument in favor of learning useless skills"
 date: 2023-01-20
 ---
 
+# An argument in favor of useless skills
+
 Lately I've been been picking up a lot of "useless" skills.
 
 By useless I mean that they don't provide any economic value to me or likely anyone else, and there is no reason for me to learn them other than curiosity and the act of learning.
 
 Because this is all for fun. I don't have to be hard on myself if I'm struggling or I find the "skill" boring. I can just move onto something else.
 
-I've typically been picking things up that have a steep but short learning curve. This gives me that satisfying feeling of grokking something without sinking too much time into it.
+<mark>I've typically been picking things up that have a steep but short learning curve. This gives me that satisfying feeling of grokking something without sinking too much time into it.</mark>
 
 Here are some examples of skills I've learnt recently, I've linked to the resource I used to learn them.
 
