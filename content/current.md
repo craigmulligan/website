@@ -5,9 +5,9 @@ description: "My current project or job."
 
 I have a few projects on the go.
 
-# [Leaflet](https://github.com/craigmulligan/leaflet)
+# [BrainfuckAR](posts/brainfuckar)
 
-Leaflet is a tool to help you eat more plant based meals.
+This is an exploration in how one could program in the real world with the aid of AR. I chose a simple to implement language and created an augmented reality IDE.
 
 # [Toysql](https://github.com/craigmulligan/toysql)
 
@@ -18,3 +18,7 @@ I've always had a hazy ideas about database internals and this is giving me the 
 # [CrowdFactor](/posts/crowdfactor/)
 
 Crowd Factor uses surf cameras to help you predict crowds at your local surfspot.
+
+# [Leaflet](https://github.com/craigmulligan/leaflet)
+
+Leaflet is a tool to help you eat more plant based meals.
