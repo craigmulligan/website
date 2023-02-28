@@ -15,6 +15,6 @@ For the last couple months I've been building a [toy database](https://github.co
 
 I've always had a hazy ideas about database internals and this is giving me the opportunity to clarify those ideas.
 
-# [CrowdFactor](posts/crowdfactor/)
+# [CrowdFactor](/posts/crowdfactor/)
 
 Crowd Factor uses surf cameras to help you predict crowds at your local surfspot.
