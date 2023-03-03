@@ -15,6 +15,7 @@ While you are here you might like to take a look at the [tools I have made](/too
 
 ### Writing
 
+- [An Augmented reality brainfuck interpreter](posts/brainfuckar)
 - [An argument for useless skills](posts/useless/)
 - [Better Spelling Bee hints](posts/beehint/)
 - [Predicting surf crowds](posts/crowdfactor/)
