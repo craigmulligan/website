@@ -71,5 +71,5 @@ of water. This means that tea requires about eight times less water than coffee.
 * 2021-10-31: [A milkman in Cornwall has saved a row of shops by dousing a fire with 320 pints of milk.](https://www.irishexaminer.com/world/arid-30037484.html)
 * 2021-10-28: [Female African Elephants Are Evolving Without Tusks Due to Ivory Poaching](https://theswaddle.com/female-african-elephants-are-evolving-without-tusks-due-to-ivory-poaching/).
 * 2021-10-22: The [inventor of the boogey board](https://en.wikipedia.org/wiki/Tom_Morey) was a qualified mathematician from USC. He invented a bunch of other things like the remove-able fin system and a board that you could break into 3 for traveling.
-* 2021-10-20: There used to be laws up till as late as the early 2000s which meant margarine had to be coloured (pink) or couldn't be coloured yellow (to mimic butter).
+* 2021-10-20: There used to be laws up until as late as the early 2000s which meant margarine had to be coloured (pink) or couldn't be coloured yellow (to mimic butter).
 * 2021-10-19: The Irish main diet prior to potatoes, for ~1000 years was dairy & oats. Perhaps the reason I can stomach so many milkshakes. 
