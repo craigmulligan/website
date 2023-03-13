@@ -16,13 +16,11 @@ The idea is that Crowdfactor provides an interface similar to google maps *["pop
 
 ## How it works
 
-Every 10 mins, Crowdfactor will stream a minute of footage from a configured [surfline camera](https://www.surfline.com/surf-report/venice-breakwater/590927576a2e4300134fbed8). It then feeds that footage into a computer vision model to count the number of surfers in the water. The surfer count is then saved to a database along with the [surf rating](https://www.surfline.com/surf-news/surflines-rating-surf-heights-quality/1417) at the time of recording.
+Every 10 mins, Crowdfactor will stream a minute of footage from a configured [surfline camera](https://www.surfline.com/surf-report/venice-breakwater/590927576a2e4300134fbed8). It then feeds that footage into a computer vision model to count the number of surfers in the water. The surfer count is then saved to a database along with the [surf rating](https://www.surfline.com/surf-news/surflines-rating-surf-heights-quality/1417) and other weather conditions at the time of recording.
 
 ![Vision model counting surfers](/img/prediction.png)
 
-With this database you can then make predictions based on the day of the week, time and surf rating. For instance if it's a Wednesday 11am and the conditions are poor, you can take an average of the previous crowd recordings on Wednesday at 11am when conditions have been poor to make a prediction. 
-
-These predictions are visualised along side the real recordings and the forecasted [surf ratings](https://support.surfline.com/hc/en-us/articles/5402742348955-Surf-Conditions-Ratings-and-Colors) for the day on a [dashboard](https://9d6cb911e0cb153469c25e3e910ac831.balena-devices.com/).
+You can then use these readings to train another model which makes predictions on the crowd count based on the other parameters like day, time, wave quality and weather. These crowd count predictions are visualised along side the real recordings and the forecasted [surf ratings](https://support.surfline.com/hc/en-us/articles/5402742348955-Surf-Conditions-Ratings-and-Colors) for the day on a [dashboard](https://9d6cb911e0cb153469c25e3e910ac831.balena-devices.com/).
 
 ![Dashboard](/img/dashboard.png)
 
