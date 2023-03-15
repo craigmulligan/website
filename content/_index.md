@@ -9,7 +9,7 @@ I try to build <mark>complex systems</mark> with <mark>simple software</mark>.
 
 I used to work in the UK, at [beryl](https://beryl.cc) and [balena](https://balena.io) but I'm relocating to California with my [partner](https://tylergindraux.com/) soon.
 
-While you are here you might like to take a look at the [tools I have made](/tools), [books I have read](/books), [facts I have collected](/til) or [what I'm working on.](/current)
+While you are here you might like to take a look at the [facts I have collected](/til), [books I have read](/books), [tools I have made](/tools) or [what I'm working on.](/current)
 
 ---
 

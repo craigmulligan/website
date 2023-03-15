@@ -22,7 +22,7 @@ Every 10 mins, Crowdfactor will stream a minute of footage from a configured [su
 
 You can then use these readings to train another model which makes predictions on the crowd count based on the other parameters like day, time, wave quality and weather. These crowd count predictions are visualised along side the real recordings and the forecasted [surf ratings](https://support.surfline.com/hc/en-us/articles/5402742348955-Surf-Conditions-Ratings-and-Colors) for the day on a [dashboard](https://9d6cb911e0cb153469c25e3e910ac831.balena-devices.com/).
 
-![Dashboard](/img/dashboard.png)
+![Dashboard](/img/dashboard-2.png)
 
 ## Next steps
 
