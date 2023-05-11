@@ -15,6 +15,7 @@ While you are here you might like to take a look at the [facts I have collected]
 
 ### Writing
 
+- [Testing a watermelon db app](posts/testing-with-watermelon)
 - [An Augmented reality brainfuck interpreter](posts/brainfuckar)
 - [An argument for useless skills](posts/useless/)
 - [Better Spelling Bee hints](posts/beehint/)
