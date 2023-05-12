@@ -5,6 +5,10 @@ description: "My current project or job."
 
 I have a few projects on the go.
 
+# [HypeCycle](https://github.com/RespectableThieves/hypecycle)
+
+This is an open-source cycling computer I'm building with my [brother](https://www.shaunmulligan.com/) 
+
 # [BrainfuckAR](posts/brainfuckar)
 
 This is an exploration in how one could program in the real world with the aid of AR. I chose a simple to implement language and created an augmented reality IDE.
