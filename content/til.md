@@ -5,7 +5,7 @@ description: "A list of interesting things I have learnt recently"
 
 # Today I learnt
 
-> This is a list of superficial but interesting facts I've come across. I've tried to verify these but some of them might be better stories than facts.
+> This is a list of superficial but interesting facts I've come across. I've tried my best to verify these but some of them might be a better story than fact.
 
 * 2023-07-11: [The Spanish Peso or Dollar](https://en.wikipedia.org/wiki/United_States_dollar#:~:text=The%20Spanish%20peso,quotations%20until%202001.) was cut radially into 8 pieces to form change. These pieces were colloquially called bits. This still lingers today with term 2 bits (12.5 x 2 = 25) referring to a quarter. It's an interesting coincidence that computers use 8-bit bytes too.
 * 2023-06-30: [Up until 1804 vice presidency of the USA was awarded to the runner up](https://en.wikipedia.org/wiki/Vice_President_of_the_United_States#:~:text=Early%20vice%20presidents%20and%20Twelfth%20Amendment,-John%20Adams%2C%20the&text=The%20first%20two%20vice%20presidents,the%20role%20of%20Senate%20president.). This often meant rivals would serve in office together. The position was often used to frustrate the presidents policies until the system was overhauled with the 12th amendment.
