@@ -7,6 +7,7 @@ description: "A list of interesting things I have learnt recently"
 
 > This is a list of superficial but interesting facts I've come across. I've tried my best to verify these but some of them might be a better story than fact.
 
+- 2023-11-23: [In 1750 BCE](https://twitter.com/weird_hist/status/1026611223134175232?lang=en) you'd need to work ~50 hours for one hour of lamp light. Now less than a second will buy you an hour of light. 
 - 2023-11-03: [Harriet](https://en.wikipedia.org/wiki/Harriet_(tortoise)) is a tortoise that was owned by both Charles Darwin & Steve Irwin. Harriet was initially collected by Charles Darwin during his 1835 expedition to the Galapagos Islands and later brought to the Australia Zoo which Steve and his wife Terri owned. Harriet died in 2006 at an estimated 175 years old.  
 - 2023-10-08: [Fish skin](https://en.wikipedia.org/wiki/Kerecis), namely code, can be used as human skin replacement for skin grafts.
 - 2023-09-20: There is a [theory on the origin of bagels](https://www.nationalgeographic.com/history/article/bagel-history-jewish-american-culture-symbol#:~:text=Another%20bagel%20origin%20story%20tells,bread%2C%20began%20boiling%20it%20instead.) that bakers in 9th century Prussia or Poland who, hampered by antisemitic law that forbade them from baking their bread, began boiling it instead.
