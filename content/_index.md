@@ -15,7 +15,7 @@ While you are here you might like to take a look at the [facts I have collected]
 
 ### Writing
 
-- [Hide console logging for passing tests with node:test](posts/node-suppress-test-logs.md)
+- [Hide console logging for passing tests with node:test](posts/node-suppress-test-logs)
 - [Testing a watermelon db app](posts/testing-with-watermelon)
 - [An Augmented reality brainfuck interpreter](posts/brainfuckar)
 - [An argument for useless skills](posts/useless/)
