@@ -8,9 +8,15 @@ I'm a senior engineer who loves writing tests, working in tight knit teams and m
 
 Over the last year, I’ve had the opportunity to travel all over the world while dedicating my energy to small projects that explore my interests like [machine learning](https://craigmulligan.com/posts/crowdfactor/), [databases](https://github.com/craigmulligan/toysql), [cycling](https://github.com/RespectableThieves/hypecycle) and [augmented reality](https://craigmulligan.com/posts/brainfuckar)
 
-I've recently moved to the United States, I’ve just received my work authorization and I’m eager to start on the next big thing.
-
+I now live in Los Angeles and work for [Fullsend](https://fullsend.io)
+ 
 # Experience
+
+### [Fullsend](https://fullsend.io) 
+
+<small>June 2023 - present</small>
+
+Fullsend is a small do it all agency based out of Santa Monica. I've been working as a fullstack engineer on projects in the AI and web3 space.
 
 ### [Beryl](https://beryl.cc) 
 
