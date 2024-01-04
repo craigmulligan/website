@@ -12,4 +12,4 @@ dev:
 # Update the books.md page.
 .PHONY: bookshelf  
 bookshelf:
-	python bookshelf.py
+	python3 bookshelf.py

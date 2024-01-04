@@ -5,6 +5,10 @@ description: "A list of books I've read and some I recommend."
 # Bookshelf 
 
 Some of the books I've read. I've highlighted ones that I'd recommend.
+- <mark><a href='http://www.amazon.co.uk/dp/B01BSJU7CC' target='blank'>Shakespeare: The World as Stage - Bryson, Bill</a></mark>
+- <mark><a href='http://www.amazon.co.uk/dp/1338878921' target='blank'>Harry Potter and the Sorcerer's Stone - Rowling, J.K</a></mark>
+- <a href='http://www.amazon.co.uk/dp/163149113X' target='blank'>How to be a Victorian - Goodman, Ruth</a>
+- <a href='http://www.amazon.co.uk/dp/593728483' target='blank'>Unruly: The Ridiculous History of England's Kings and Queens - Mitchell, David</a>
 - <mark><a href='http://www.amazon.co.uk/dp/034553042X' target='blank'>The Secret Race - Hamilton, Tyler; Daniel, Doyle</a></mark>
 - <a href='http://www.amazon.co.uk/dp/1984880969' target='blank'>The Thursday Murder Club - Osman, Richard</a>
 - <a href='http://www.amazon.co.uk/dp/B0028MBKVG' target='blank'>Born to Run - McDougall, Christopher</a>
