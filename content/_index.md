@@ -7,7 +7,7 @@ Hi 👋, I'm [Craig](https://github.com/craigmulligan).
 
 I try to build <mark>complex systems</mark> with <mark>simple software</mark>.
 
-I used to work in the UK, at [beryl](https://beryl.cc) and [balena](https://balena.io) now I live in Los Angeles with my [wife](https://tylergindraux.com/).
+I used to work in the UK, at [beryl](https://beryl.cc) and [balena](https://balena.io) now I live in Los Angeles with my [wife](https://tylergindraux.com/) and work at [fullsend](https://fullsend.io/).
 
 While you are here you might like to take a look at the [facts I have collected](/til), [books I have read](/books), [tools I have made](/tools) or [what I'm working on.](/current)
 

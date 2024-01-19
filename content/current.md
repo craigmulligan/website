@@ -1,9 +1,13 @@
 ---
 title: "What I'm working on right now"
-description: "My current project or job."
+description: "A few personal projects"
 ---
 
-I have a few projects on the go.
+I have a personal projects I've worked on recently 
+
+# [Vibes](https://github.com/craigmulligan/mapbox-navigation-machine)
+
+This is google maps clone that gives you directions via haptic feedback. The idea being that you can get around a city without taking a phone out of your pocket.  
 
 # [HypeCycle](https://github.com/RespectableThieves/hypecycle)
 
