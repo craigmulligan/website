@@ -25,7 +25,7 @@ html:disabled {
 }
 
 body {
-  font-family: monospace;
+  font-family: 'Source Serif Pro', serif;
   padding: 0;
   font-size: 20rem;
   line-height: 1.75;
