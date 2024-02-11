@@ -1,9 +1,15 @@
 :root {
-  --background: #fff7f4;
-  --foreground: #222222;
-  --foreground-muted: #2222227f;
-  --container-colour: #f3f4f6;
-  --blue: #67BDFC;
+  --background: rgba(255, 255, 248, 1);
+  --foreground: rgba(17, 17, 17, 1);
+  --foreground-muted: rgba(17, 17, 17, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #151515;
+    --foreground: rgba(221, 221, 221, 1); 
+    --foreground-muted: rgba(221, 221, 221, 0.2);
+  }
 }
 
 html {
@@ -29,6 +35,12 @@ body {
   padding: 0;
   font-size: 20rem;
   line-height: 1.75;
+}
+
+a {
+  color: var(--foreground);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 /* Typography scale: 1.250 (major third)  */
@@ -79,15 +91,16 @@ li {
 pre {
   padding: 10px;
   overflow: auto;
+  font-size: 12.80rem;
 }
 
 /* if the code block already has  */
 /* a class it's probably already highlighted */
 /* by the zola syntax highlighter. */
 code:not([class]) {
-  background-color: rgba(222,222,222,0.3);
-  color: crimson;
-  padding: 0 4px;
+  /* color: #fd971f; */
+  color: #da4939;
+  font-size: 16rem;
 }
 
 footer {
@@ -134,10 +147,18 @@ blockquote {
 }
 
 hr {
-  border-style: solid;
-  border-color: var(--foreground-muted);
-  opacity: 0.4;
+  border: 1px solid;
+  border-color: var(--background);
+  opacity: 1;
   margin: 45px 0;
+}
+
+mark {
+  padding: 0px 5px;  
+}
+
+mark a {
+  color: rgba(17, 17, 17, 1);
 }
 
 @media screen and (max-width: 700px) {
