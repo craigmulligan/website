@@ -5,6 +5,12 @@ description: "A list of books I've read and some I recommend."
 # Bookshelf 
 
 Some of the books I've read. I've highlighted ones that I'd recommend.
+- <mark><a href='http://www.amazon.co.uk/dp/978-0545139700' target='blank'>Harry Potter and the Deathly Hallows - Rowling, J.K</a></mark>
+- <mark><a href='http://www.amazon.co.uk/dp/978-0439785969' target='blank'>Harry Potter and the Half-Blood Prince - Rowling, J.K</a></mark>
+- <mark><a href='http://www.amazon.co.uk/dp/054579143X' target='blank'>Harry Potter and the Order of the Phoenix - Rowling, J.K</a></mark>
+- <mark><a href='http://www.amazon.co.uk/dp/1338878956' target='blank'>Harry Potter and the Goblet of Fire - Rowling, J.K</a></mark>
+- <mark><a href='http://www.amazon.co.uk/dp/545582938' target='blank'>Harry Potter and the Prisoner of Azkaban - Rowling, J.K</a></mark>
+- <mark><a href='http://www.amazon.co.uk/dp/439064872' target='blank'>Harry Potter and the Chamber of Secrets - Rowling, J.K</a></mark>
 - <mark><a href='http://www.amazon.co.uk/dp/B01BSJU7CC' target='blank'>Shakespeare: The World as Stage - Bryson, Bill</a></mark>
 - <mark><a href='http://www.amazon.co.uk/dp/1338878921' target='blank'>Harry Potter and the Sorcerer's Stone - Rowling, J.K</a></mark>
 - <a href='http://www.amazon.co.uk/dp/163149113X' target='blank'>How to be a Victorian - Goodman, Ruth</a>
