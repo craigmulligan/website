@@ -7,6 +7,7 @@ description: "A list of interesting things I have learnt recently"
 
 > This is a list of superficial but interesting facts I've come across. I've tried my best to verify these but some of them might be a better story than fact.
 
+- 2024-04-10: Ironically [a lifeboat is statistically](https://www.nautinst.org/uploads/assets/uploaded/5951906a-8868-4532-b5ab5b32a7d9374d.pdf) the most dangerous thing on a ship.
 - 2024-03-31: Barnacle fouling, the collection of barnacles on the hull of ships [can decrease full effeciency by 30-50%](https://www.researchgate.net/publication/49686787_Economic_impact_of_biofouling_on_a_naval_surface_ship). In the 17th century the british Royal Navy plated their entire fleet with copper sheathing to protected the wooden hulls from shipworm, barnacles and other hull fouling.  
 - 2024-03-25: In 1915, Cecil Chubb went to an Auction with the intention of buying a set of curtains for his wife. He instead [bought StoneHenge](https://www.theatlantic.com/science/archive/2015/09/the-man-who-bought-his-wife-stonehenge/406450/). It cost him £6,000 roughly $680,000 in today’s dollars.
 - 2024-03-14: There is no surviving broadcast of [George Orwell's voice](https://en.wikipedia.org/wiki/George_Orwell#:~:text=Orwell%20spoke%20on%20many%20BBC%20and%20other%20broadcasts%2C%20but%20no%20recordings%20are%20known%20to%20survive.) even though he spoke on many BBC and other broadcasts  
