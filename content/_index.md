@@ -5,11 +5,11 @@ description: "Craig's little home on the web"
 
 Hi 👋, I'm [Craig](https://github.com/craigmulligan).
 
-I try to build **complex systems** with **simple software**.
+I like to build stuff with software.
 
 I used to work in the UK, at [beryl](https://beryl.cc) and [balena](https://balena.io) now I live in the NYC with my [wife](https://tylergindraux.com/) and work at [fullsend](https://fullsend.io/).
 
-While you are here you might like to take a look at the [facts I have collected](/til), [books I have read](/books), [tools I have made](/tools) or [what I'm working on.](/now).
+While you are here you might want to take have a look at what [I'm working on](/now), or peruse over some [facts I've collected](/til).
 
 ---
 
