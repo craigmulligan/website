@@ -5,7 +5,7 @@ description: "Craig's little home on the web"
 
 Hi 👋, I'm [Craig](https://github.com/craigmulligan).
 
-I like to build stuff with software.
+I like to build things with software.
 
 I used to work in the UK, at [beryl](https://beryl.cc) and [balena](https://balena.io) now I live in the NYC with my [wife](https://tylergindraux.com/) and work at [fullsend](https://fullsend.io/).
 
