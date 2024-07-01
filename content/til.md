@@ -7,6 +7,7 @@ description: "A list of interesting things I have learnt recently"
 
 > This is a list of superficial but interesting facts I've come across. I've tried my best to verify these but some of them might be a better story than fact.
 
+- 2024-07-01: In [many countries it is legal to marry a deceased person](https://en.wikipedia.org/wiki/Posthumous_marriage).
 - 2024-05-05: In [New Jersey it was illegal to own a pager if you were under 18.](https://newsletter.pessimistsarchive.org/p/the-forgotten-war-on-beepers). This was part of US wide pager panic in the late 80s to mid 90s, where schools and law makers worried about the connection between pagers and drug dealers. Most states restricted children from carrying pagers on school grounds but New Jersey prohibit the sale of them to minors later amending the law to be in line with other states. During this period over a 1000 students were arrested in chicago on pager related charges. The law is still on the New Jersey books today.
 - 2024-04-10: Ironically [a lifeboat is statistically](https://www.nautinst.org/uploads/assets/uploaded/5951906a-8868-4532-b5ab5b32a7d9374d.pdf) the most dangerous thing on a ship.
 - 2024-03-31: Barnacle fouling, the collection of barnacles on the hull of ships [can decrease full effeciency by 30-50%](https://www.researchgate.net/publication/49686787_Economic_impact_of_biofouling_on_a_naval_surface_ship). In the 17th century the british Royal Navy plated their entire fleet with copper sheathing to protected the wooden hulls from shipworm, barnacles and other hull fouling.
