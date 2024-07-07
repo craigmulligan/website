@@ -17,6 +17,14 @@ Crowd Factor uses surf cameras to help you predict crowds at your local surfspot
 
 A port of google's python-fire to javascript.
 
+### [Speckled](https://github.com/craigmulligan/speckled)
+
+WIP - An LLM agent that generates and executes e2e tests for web apps.
+
+### [Standup](https://github.com/craigmulligan/standup)
+
+WIP - Using LLM's to generate standup meeting notes from your git history.
+
 ---
 
 > The following projects are not actively maintained.
