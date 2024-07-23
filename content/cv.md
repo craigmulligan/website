@@ -10,6 +10,8 @@ I'm a senior engineer who loves writing tests, working in tight knit teams and m
 
 I've lived and worked in South Africa, the UK and now the US. I'm currently working for [Fullsend](https://fullsend.io) and based in NYC.
 
+I like to think I'm pretty good, but [don't just take my word for it.](/praise)
+
 My work experiences are listed below, but I'm also always tinkering on [my own experiments](/now).
  
 # Experience
@@ -19,6 +21,7 @@ My work experiences are listed below, but I'm also always tinkering on [my own e
 <small>June 2023 - present</small>
 
 Fullsend is a small "do it all" agency based out of Santa Monica. As a fullstack engineer, I’ve led diverse consumer-facing initiatives spanning journalism, telemedicine, web3, and generative AI spaces. Each engagement is unique, but typically I've been embedded in a larger team helping accelerate them towards their specific goals. While adept at adapting to various tech stacks, React, Next.js, and TypeScript have been recurring tools amongst client projects.
+
 
 ### [Beryl](https://beryl.cc) 
 
