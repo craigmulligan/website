@@ -5,6 +5,11 @@ description: "A list of books I've read and some I recommend."
 # Bookshelf 
 
 Some of the books I've read. I've highlighted ones that I'd recommend.
+- <a href='http://www.amazon.co.uk/dp/B092FX6HYZ' target='blank'>Small Things Like These  - Keegan, Claire</a>
+- <a href='http://www.amazon.co.uk/dp/B00N6PBABE' target='blank'>Bad Days in History: A Gleefully Grim Chronicle of Misfortune, Mayhem, and Misery for Every Day of the Year - Farquhar, Michael</a>
+- <mark><a href='http://www.amazon.co.uk/dp/B0B6Z4SVTH' target='blank'>The Wager: A Tale of Shipwreck, Mutiny and Murder
+ - Grann, David</a></mark>
+- <mark><a href='http://www.amazon.co.uk/dp/385521316' target='blank'>Say Nothing: A True Story of Murder and Memory in Northern Ireland - Radden Keefe, Patrick</a></mark>
 - <mark><a href='http://www.amazon.co.uk/dp/978-0545139700' target='blank'>Harry Potter and the Deathly Hallows - Rowling, J.K</a></mark>
 - <mark><a href='http://www.amazon.co.uk/dp/978-0439785969' target='blank'>Harry Potter and the Half-Blood Prince - Rowling, J.K</a></mark>
 - <mark><a href='http://www.amazon.co.uk/dp/054579143X' target='blank'>Harry Potter and the Order of the Phoenix - Rowling, J.K</a></mark>
