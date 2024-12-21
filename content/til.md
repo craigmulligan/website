@@ -7,6 +7,8 @@ description: "A list of interesting things I have learnt recently"
 
 > This is a list of superficial but interesting facts I've come across. I've tried my best to verify these but some of them might be a better story than fact.
 
+- 2024-12-21: [The Order of the Occult Hand](https://en.wikipedia.org/wiki/Order_of_the_Occult_Hand) is a secret society of American journalists who slip the meaningless and telltale phrase "It was as if some occult hand had…" in print as an inside joke. The have since picked a new phrase which is still unknown. 
+- 2024-12-21: [Urologists have reported that the number of vasectomies scheduled increases by up to 50% during March Madness](https://news.uthscsa.edu/vasectomies-increase-during-march-madness/). The idea is that men use there recover time to watch the college basketball tournament.
 - 2024-09-25: All book's barcodes start with the same 3 digits `978`, which denotes it's origin of a [fictitious country called "Bookland"](https://en.wikipedia.org/wiki/Bookland)
 - 2024-08-02: In [1983](https://www.cbc.ca/archives/dave-winfield-seagull-1.5230144), Dave Winfield, a Yankees player was arrested in Toronto for animal cruelty after killing a seagull with a wayward throw. He claimed it was an accident and the charges were eventually dropped. Winfield later moved to Toronto to join the Blue Jays playing a key role in them winning their first world series.
 - 2024-07-31: In [1976](https://x.com/qikipedia/status/1752645741225353356), the military dictatorship in Argentina banned the teaching of Venn diagrams in schools in case they promoted subversive thoughts.

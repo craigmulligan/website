@@ -7,7 +7,7 @@ Hi 👋, I'm [Craig](https://github.com/craigmulligan).
 
 I like to build things with software.
 
-I used to work in the UK, at [beryl](https://beryl.cc) and [balena](https://balena.io) now I live in the NYC with my [wife](https://tylergindraux.com/) and work at [fullsend](https://fullsend.io/).
+I used to work in the UK, at [beryl](https://beryl.cc) & [balena](https://balena.io) now I live in the NYC with my [wife](https://tylergindraux.com/) and work at [norm.ai](https://norm.ai/).
 
 While you are here you might want to take have a look at what [I'm working on](/now), or peruse over some [facts I've collected](/til).
 

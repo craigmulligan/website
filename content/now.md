@@ -3,7 +3,7 @@ title: "What I'm working on right now"
 description: "A few personal projects"
 ---
 
-I'm currently living in Brooklyn and working for [fullsend](fullsend.io). Below you can find some of my more recent side projects, tools and experiments.
+I'm currently living in Brooklyn and working for [Norm.ai](https://norm.ai). Below you can find some of my more recent side projects, tools and experiments.
 
 ### [Leaflet](https://github.com/craigmulligan/leaflet)
 

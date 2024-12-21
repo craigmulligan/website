@@ -8,7 +8,7 @@ description: "My professional Experience to Date."
 
 I'm a senior engineer who loves writing tests, working in tight knit teams and making the world a little better through code.
 
-I've lived and worked in South Africa, the UK and now the US. I'm currently working for [Fullsend](https://fullsend.io) and based in NYC.
+I've lived and worked in South Africa, the UK and now the US. I'm currently working for [Norm.ai](https://norm.ai) and based in NYC.
 
 I like to think I'm pretty good, but [don't just take my word for it.](/praise)
 
@@ -16,9 +16,15 @@ My work experiences are listed below, but I'm also always tinkering on [my own e
  
 # Experience
 
-### [Fullsend](https://fullsend.io) 
+### [Norm.ai](https://norm.ai) 
 
-<small>June 2023 - present</small>
+<small>September 2024 - present</small>
+
+Norm.ai is using LLMs to help compliance teams. We are based in NYC and always looking for talented engineers.
+
+### [Fullsend](https://fullsend.io)
+
+<small>June 2023 - September 2024</small>
 
 Fullsend is a small "do it all" agency based out of Santa Monica. As a fullstack engineer, I’ve led diverse consumer-facing initiatives spanning journalism, telemedicine, web3, and generative AI spaces. Each engagement is unique, but typically I've been embedded in a larger team helping accelerate them towards their specific goals. While adept at adapting to various tech stacks, React, Next.js, and TypeScript have been recurring tools amongst client projects.
 
