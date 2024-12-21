@@ -5,6 +5,11 @@ description: "A list of books I've read and some I recommend."
 # Bookshelf 
 
 Some of the books I've read. I've highlighted ones that I'd recommend.
+- <mark><a href='http://www.amazon.co.uk/dp/307408876' target='blank'>Dead Wake: The Last Crossing of the Lusitania - Larson, Erik</a></mark>
+- <a href='http://www.amazon.co.uk/dp/B005ENZ6KM' target='blank'>We the Animals - Torres, Justin</a>
+- <mark><a href='http://www.amazon.co.uk/dp/B00X2F7NRI' target='blank'>The Vegetarian - Kang, Han</a></mark>
+- <mark><a href='http://www.amazon.co.uk/dp/B000SEJHRA' target='blank'>Me Talk Pretty One Day - Sedaris, David</a></mark>
+- <mark><a href='http://www.amazon.co.uk/dp/B0CC1J32NG' target='blank'>The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook - Sides, Hampton</a></mark>
 - <a href='http://www.amazon.co.uk/dp/B092FX6HYZ' target='blank'>Small Things Like These  - Keegan, Claire</a>
 - <a href='http://www.amazon.co.uk/dp/B00N6PBABE' target='blank'>Bad Days in History: A Gleefully Grim Chronicle of Misfortune, Mayhem, and Misery for Every Day of the Year - Farquhar, Michael</a>
 - <mark><a href='http://www.amazon.co.uk/dp/B0B6Z4SVTH' target='blank'>The Wager: A Tale of Shipwreck, Mutiny and Murder
