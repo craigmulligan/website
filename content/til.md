@@ -7,6 +7,7 @@ description: "A list of interesting things I have learnt recently"
 
 > This is a list of superficial but interesting facts I've come across. I've tried my best to verify these but some of them might be a better story than fact.
 
+- 2025-04-18: [You can send potatoes in the mail without any packaging](https://facts.usps.com/mailing-potatoes/)
 - 2024-12-21: [The Order of the Occult Hand](https://en.wikipedia.org/wiki/Order_of_the_Occult_Hand) is a secret society of American journalists who slip the meaningless and telltale phrase "It was as if some occult hand had…" in print as an inside joke. The have since picked a new phrase which is still unknown. 
 - 2024-12-21: [Urologists have reported that the number of vasectomies scheduled increases by up to 50% during March Madness](https://news.uthscsa.edu/vasectomies-increase-during-march-madness/). The idea is that men use there recover time to watch the college basketball tournament.
 - 2024-09-25: All book's barcodes start with the same 3 digits `978`, which denotes it's origin of a [fictitious country called "Bookland"](https://en.wikipedia.org/wiki/Bookland)
